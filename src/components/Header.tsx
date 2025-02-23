@@ -9,6 +9,7 @@ const Header: React.FC = () => {
                 <h1 className="name">Natsuki</h1>
                 <nav className="nav">
                     <div><Link to="/">About</Link></div>
+                    <div><Link to="/music">Music</Link></div>
                     <div><Link to="/projects">Projects</Link></div>
                     <div><Link to="/contact">Contact</Link></div>
                 </nav>

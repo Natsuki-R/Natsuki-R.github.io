@@ -1,0 +1,97 @@
+.music-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Title */
+.music-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+/* Grid Layout */
+.music-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 350px;
+}
+
+/* Artist Card */
+.artist-card {
+    background-color: #242424;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Artist Name */
+.artist-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.artist-genre {
+    padding-bottom: 12px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+/* Album Card */
+.album-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.album-card:hover {
+    background-color: #567f73;
+}
+
+.album-card:last-child {
+    border-bottom: none;
+}
+
+/* Album Name */
+.album-name {
+    font-weight: 500;
+    padding: 0;
+    margin: 2px 0;
+}
+
+/* Album Ranking */
+.album-ranking {
+    margin-left: 8px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.filter-button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.filter-button.active {
+    background-color: #96d6c3;
+    /* Active button highlight */
+    color: black;
+    font-weight: bold;
+}
