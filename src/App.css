@@ -59,11 +59,12 @@ body {
 }
 
 main {
-  flex: 1;
+  width: 70vw;
 }
 
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+  min-width: 300px;
 }

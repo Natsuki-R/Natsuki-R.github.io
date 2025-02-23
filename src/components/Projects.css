@@ -1,6 +1,7 @@
 .projects {
     padding: 4rem 2rem;
     background-color: #fff;
+    min-width: 300px;
 }
 
 .projects-content {
