@@ -1,17 +1,29 @@
-import viteLogo from '/favicon.svg'
+import profile from './assets/profile.png'
+import Header from "./components/Header"
+import About from "./components/About"
+import Projects from "./components/Projects"
+import Contact from "./components/Contact"
 import './App.css'
 
 function App() {
 
   return (
-    <>
+    <div className="App">
+      <Header />
       <div>
         <a href="">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+          <img src={profile} className="logo" alt="Vite logo" />
         </a>
       </div>
-      <h1>Hello Natsuki</h1>
-    </>
+      <main>
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <footer>
+        <p>© 2025 Natsuki. All rights reserved.</p>
+      </footer>
+    </div>
   )
 }
 
