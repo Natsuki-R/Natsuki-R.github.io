@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import profile from './assets/profile.png'
 import Header from "./components/Header"
 import About from "./components/About"
 import Projects from "./components/Projects"
@@ -11,11 +10,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div>
-          <a href="/">
-            <img src={profile} className="logo" alt="Vite logo" />
-          </a>
-        </div>
         <Header />
         <main>
           <Routes>

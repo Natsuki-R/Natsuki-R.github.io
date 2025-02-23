@@ -6,9 +6,12 @@
 
 /* Title */
 .music-title {
-    font-size: 1.875rem;
+    font-size: 2.6vw;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 60px;
+    white-space: nowrap;
+    border-top: 1px solid #ddd;
+    padding-top: 60px;
 }
 
 /* Grid Layout */
@@ -16,7 +19,6 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    min-width: 350px;
 }
 
 /* Artist Card */
@@ -30,7 +32,7 @@
 
 /* Artist Name */
 .artist-name {
-    font-size: 1.25rem;
+    font-size: 1.6vw;
     font-weight: 600;
     margin-bottom: 4px;
     cursor: pointer;
@@ -38,7 +40,7 @@
 
 .artist-genre {
     padding-bottom: 12px;
-    font-size: 0.8rem;
+    font-size: 1.1vw;
     border-bottom: 1px solid #ddd;
     margin-bottom: 12px;
 }
@@ -65,13 +67,16 @@
     font-weight: 500;
     padding: 0;
     margin: 2px 0;
+    font-size: 1.1vw;
 }
 
 /* Album Ranking */
 .album-ranking {
     margin-left: 8px;
+    font-size: 1.1vw;
 }
 
+/* Filter Buttons */
 .filter-buttons {
     display: flex;
     justify-content: center;
@@ -87,6 +92,7 @@
     background-color: gray;
     border-radius: 5px;
     transition: 0.3s;
+    font-size: 1.1vw;
 }
 
 .filter-button.active {
@@ -94,4 +100,35 @@
     /* Active button highlight */
     color: black;
     font-weight: bold;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .music-title {
+        font-size: 5vw;
+    }
+
+    .artist-name {
+        font-size: 4vw;
+    }
+
+    .artist-genre {
+        font-size: 2.5vw;
+    }
+
+    .album-card {
+        font-size: 2.5vw;
+    }
+
+    .album-name {
+        font-size: 2.8vw;
+    }
+
+    .album-ranking {
+        font-size: 2.5vw;
+    }
+
+    .filter-button {
+        font-size: 2.5vw;
+    }
 }
