@@ -7,7 +7,8 @@ export type Artist = {
 
 export type Album = {
     id: number,
-    name: string;
+    name?: string;
+    artistName?: string;
     releasedYear: number;
     coverUrl?: string;
     isListened: boolean;

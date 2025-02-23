@@ -120,7 +120,8 @@
         font-size: 2.5vw;
     }
 
-    .album-name {
+    .album-name,
+    .no-albums {
         font-size: 2.8vw;
     }
 

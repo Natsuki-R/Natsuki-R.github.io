@@ -44,7 +44,7 @@ const ArtistCard: React.FC<{ artist: (typeof ARTISTS)[0] }> = ({ artist }) => {
                             <div key={album.id} className="album-card">
                                 <input type="radio" checked={album.isListened} readOnly />
                                 <p className="album-name">
-                                    {album.name} ({album.releasedYear})
+                                    {album.artistName && (album.artistName + " - ")} {album.name} ({album.releasedYear})
                                 </p>
                                 <span className="album-ranking">
                                     ⭐{album.isListened ? album.ranking : "- "}/10

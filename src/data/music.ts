@@ -17,7 +17,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "TTNG",
             name: "Animals",
             releasedYear: 2008,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -25,7 +25,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Hella",
             name: "Hold Your Horse Is",
             releasedYear: 2002,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -33,7 +33,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Piglet",
             name: "Lava Land",
             releasedYear: 2005,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -41,8 +41,8 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Slint",
             name: "Spiderland",
             releasedYear: 1991,
-            isListened: false,
-            ranking: 1
+            isListened: true,
+            ranking: 10
         },
         {
             id: 5,
@@ -81,7 +81,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Town Portal",
             name: "The Occident",
             releasedYear: 2015,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -97,7 +97,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Clever Girl",
             name: "No Drum and Bass in the Jazz Room",
             releasedYear: 2010,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -113,7 +113,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Delta Sleep",
             name: "Twin Galaxies",
             releasedYear: 2015,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -121,7 +121,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Maps & Atlases",
             name: "Trees, Swallows, Houses",
             releasedYear: 2007,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -129,15 +129,15 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "toe",
             name: "For Long Tomorrow",
             releasedYear: 2009,
-            isListened: false,
-            ranking: 1
+            isListened: true,
+            ranking: 8
         },
         {
             id: 16,
             artistName: "American Football",
             name: "American Football",
             releasedYear: 1999,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -145,7 +145,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Tera Melos",
             name: "(untitled album)",
             releasedYear: 2005,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -153,7 +153,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Tera Melos",
             name: "Patagonian Rats",
             releasedYear: 2010,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -161,7 +161,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Don Caballero",
             name: "What Burns Never Returns",
             releasedYear: 1998,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -169,7 +169,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Faraquet",
             name: "The View from This Tower",
             releasedYear: 2000,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -177,15 +177,15 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "toe",
             name: "The Book About My Idle Plot on a Vague Anxiety",
             releasedYear: 2005,
-            isListened: false,
-            ranking: 1
+            isListened: true,
+            ranking: 8
         },
         {
             id: 22,
             artistName: "Giraffes? Giraffes!",
             name: "More Skin With Milk Mouth",
             releasedYear: 2007,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -193,7 +193,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Tera Melos",
             name: "Drugs To The Dear Youth",
             releasedYear: 2007,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -209,7 +209,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Cleft",
             name: "BOSH!",
             releasedYear: 2014,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -217,7 +217,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Three Trapped Tigers",
             name: "Route One or Die",
             releasedYear: 2011,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -233,7 +233,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "June of 44",
             name: "Engine Takes To The Water",
             releasedYear: 1995,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -241,7 +241,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Three Trapped Tigers",
             name: "Silent Earthling",
             releasedYear: 2016,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -257,7 +257,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Owls",
             name: "S/T",
             releasedYear: 2001,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -273,7 +273,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Enemies",
             name: "We’ve Been Talking",
             releasedYear: 2010,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -281,7 +281,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "The Dillinger Escape Plan",
             name: "Calculating Infinity",
             releasedYear: 1998,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -289,16 +289,16 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Tera Melos",
             name: "X’ed Out",
             releasedYear: 2013,
-            isListened: false,
-            ranking: 1
+            isListened: true,
+            ranking: 4
         },
         {
             id: 36,
             artistName: "Tangled Hair",
             name: "We Do What We Can",
             releasedYear: 2018,
-            isListened: false,
-            ranking: 1
+            isListened: true,
+            ranking: 4
         },
         {
             id: 37,
@@ -361,7 +361,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "The Bulletproof Tiger",
             name: "You Wanna Kiss About It?",
             releasedYear: 2011,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -369,7 +369,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Drive Like Jehu",
             name: "Yank Crime",
             releasedYear: 1994,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -385,7 +385,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "Totorro",
             name: "Home Alone",
             releasedYear: 2014,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
@@ -393,7 +393,7 @@ const MATH_ROCK_TOP_50: Artist = {
             artistName: "And So I Watch You From Afar",
             name: "And So I Watch You From Afar",
             releasedYear: 2009,
-            isListened: false,
+            isListened: true,
             ranking: 1
         },
         {
