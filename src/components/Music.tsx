@@ -7,7 +7,7 @@ const FILTERS = ["All", "Listened", "Not Listened"] as const;
 const Music: React.FC = () => {
     return (
         <div className="music-container">
-            <h1 className="music-title">🎵 No Music No Life</h1>
+            <h1 className="music-title">🎧 No Music No Life</h1>
             <div className="music-grid">
                 {ARTISTS.map((artist) => (
                     <ArtistCard key={artist.name} artist={artist} />
@@ -42,7 +42,7 @@ const ArtistCard: React.FC<{ artist: (typeof ARTISTS)[0] }> = ({ artist }) => {
                     {filteredAlbums.length > 0 ? (
                         filteredAlbums.map((album) => (
                             <div key={album.id} className="album-card">
-                                <input type="checkbox" checked={album.isListened} readOnly />
+                                <input type="radio" checked={album.isListened} readOnly />
                                 <p className="album-name">
                                     {album.name} ({album.releasedYear})
                                 </p>
