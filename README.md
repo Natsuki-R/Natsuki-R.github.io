@@ -6,6 +6,18 @@ Welcome to my personal website! Feel free to explore and interact with it.
 🔗 **Online Preview**:  
 Visit my site [here](https://natsuki-r.github.io/).
 
+
+## Tech Stack
+
+This project is built using the following technologies:
+
+1. **React** for building the user interface.
+2. **React Router DOM** for handling routing within the app.
+3. **Vite** for a fast and efficient build tool.
+4. **TypeScript** for enhanced code quality and type safety.
+5. **ESLint** for maintaining consistent and clean code.
+6. **GitHub Pages** for hosting the website.
+
 ## Clone the Repository
 
 To clone this repository, use the following command:
