@@ -8,12 +8,9 @@ const About: React.FC = () => {
             <div className="about-content">
                 <div className="about-text">
                     <h2>About Me</h2>
-                    <p>
-                        Hello! I'm a passionate web developer with experience in React and modern web technologies. I love creating intuitive and efficient user interfaces.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me hiking in the mountains or experimenting with new recipes in the kitchen.
-                    </p>
+                    <p>someone who often spends 2 hours daydreaming under the sun.</p>
+                    <p>live for aha moments — Naval Ravikant<br />connecting the dots — Steve Jobs</p>
+                    <p>As the saying goes, <br />"If you want to manage something, keep track of it at first." <br />That’s why I build this site—to manage my time and my life.</p>
                 </div>
                 <div className="about-image">
                     <img src={slogan} alt="Your Name" />
