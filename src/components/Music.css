@@ -102,6 +102,12 @@
     font-weight: bold;
 }
 
+.radio-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .radio-btn {
     /* Remove default appearance */
     -webkit-appearance: none;

@@ -43,12 +43,14 @@ const ArtistCard: React.FC<{ artist: (typeof ARTISTS)[0] }> = ({ artist }) => {
           {filteredAlbums.length > 0 ? (
             filteredAlbums.map((album) => (
               <div key={album.id} className="album-card">
-                <input
-                  className="radio-btn"
-                  type="radio"
-                  checked={album.isListened}
-                  readOnly
-                />
+                <div className="radio-btn-wrapper">
+                  <input
+                    className="radio-btn"
+                    type="radio"
+                    checked={album.isListened}
+                    readOnly
+                  />
+                </div>
                 <p className="album-name">
                   {album.artistName && album.artistName + " - "} {album.name} (
                   {album.releasedYear})
