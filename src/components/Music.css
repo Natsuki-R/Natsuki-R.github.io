@@ -102,6 +102,34 @@
     font-weight: bold;
 }
 
+.radio-btn {
+    /* Remove default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    /* Size using vw for responsiveness */
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    border: 1px solid #96d6c3;
+    /* Positioning */
+    position: relative;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Inner dot when checked */
+.radio-btn:checked::after {
+    content: '';
+    position: absolute;
+    width: 0.4vw;
+    height: 0.4vw;
+    background-color: #96d6c3;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
     .music-title {
@@ -118,6 +146,7 @@
 
     .album-card {
         font-size: 2.5vw;
+        padding: initial;
     }
 
     .album-name,
@@ -131,5 +160,15 @@
 
     .filter-button {
         font-size: 2.5vw;
+    }
+
+    .radio-btn {
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+
+    .radio-btn:checked::after {
+        width: 1.2vw;
+        height: 1.2vw;
     }
 }
