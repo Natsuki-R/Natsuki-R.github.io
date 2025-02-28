@@ -1,24 +1,23 @@
-import React from "react"
-import "./Projects.css"
-import { PROJECTS } from "../data/project"
+import React from "react";
+import "./Projects.css";
+import { PROJECTS } from "../data/project";
 
 const Projects: React.FC = () => {
-
-    return (
-        <section id="projects" className="projects">
-            <div className="projects-content">
-                <h2>My Projects</h2>
-                <div className="project-grid">
-                    {PROJECTS.map((project, index) => (
-                        <div key={index} className="project-card">
-                            <img src={project.imageUrl} alt={project.title} />
-                            <h3>{project.title}</h3>
-                            <p>{project.description}</p>
-                        </div>
-                    ))}
-                </div>
+  return (
+    <section id="projects" className="projects">
+      <div className="projects-content">
+        <h2>My Projects</h2>
+        <div className="project-grid">
+          {PROJECTS.map((project, index) => (
+            <div key={index} className="project-card">
+              <img src={project.imageUrl} alt={project.title} />
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
             </div>
-        </section>
-    )
-}
-export default Projects
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+export default Projects;

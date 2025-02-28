@@ -1,12 +1,12 @@
-import React from "react"
-import "./Bookmark.css"
+import React from "react";
+import "./Bookmark.css";
 
 const Bookmark: React.FC = () => {
-    return (
-        <section id="bookmark" className="bookmark">
-            Bookmark
-        </section>
-    )
-}
+  return (
+    <section id="bookmark" className="bookmark">
+      Bookmark
+    </section>
+  );
+};
 
-export default Bookmark
+export default Bookmark;
