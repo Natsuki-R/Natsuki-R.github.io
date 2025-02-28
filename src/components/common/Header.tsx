@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
-import profile from "../assets/profile.png";
+import avatar from "../../assets/avatar.png";
 
 const Header: React.FC = () => {
   return (
     <header className="header">
       <div>
         <a href="/">
-          <img src={profile} className="logo" alt="Vite logo" />
+          <img src={avatar} className="logo" />
         </a>
       </div>
       <nav className="nav">
