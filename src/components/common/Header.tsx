@@ -7,9 +7,9 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div>
-        <a href="/">
+        <Link to="/">
           <img src={avatar} className="logo" />
-        </a>
+        </Link>
       </div>
       <nav className="nav">
         {/* <div><Link to="/">Home</Link></div> */}
