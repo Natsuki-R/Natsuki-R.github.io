@@ -25,12 +25,12 @@ const Header: React.FC = () => {
         <div>
           <Link to="/bookmark">Bookmark</Link>
         </div>
-        <div>
+        {/* <div>
           <Link to="/projects">Projects</Link>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <Link to="/contact">Contact</Link>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

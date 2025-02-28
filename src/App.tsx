@@ -4,8 +4,8 @@ import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Bookmark from "./components/Bookmark";
 import About from "./components/About";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+// import Projects from "./components/Projects";
+// import Contact from "./components/Contact";
 import Music from "./components/Music";
 import "./App.css";
 
@@ -21,8 +21,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/music" element={<Music />} />
             <Route path="/bookmark" element={<Bookmark />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
+            {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
         </main>
         <footer>
