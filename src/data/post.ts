@@ -10,13 +10,13 @@ const POSTS: Post[] = [
       "https://open.spotify.com/episode/5CBUg4x9dn7WHgokAkrvr3?si=taD5vgYBTY68ajeiU1zgdw&t=1102",
     ],
   },
-  {
-    timeStamp: "2024/8/4 at 01:31",
-    content: "I finished this book. Nice one.",
-    links: [
-      "https://mcusoft.wordpress.com/wp-content/uploads/2015/04/the-art-of-readable-code.pdf",
-    ],
-  },
+  // {
+  //   timeStamp: "2024/8/4 at 01:31",
+  //   content: "I finished this book. Nice one.",
+  //   links: [
+  //     "https://mcusoft.wordpress.com/wp-content/uploads/2015/04/the-art-of-readable-code.pdf",
+  //   ],
+  // },
   {
     timeStamp: "2024/7/21 at 08:03",
     content: `Work will expand to fill the amount of time you allowed for it. /nParkinson’s law`,
