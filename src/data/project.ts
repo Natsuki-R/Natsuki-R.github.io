@@ -1,5 +1,5 @@
 import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.jpg";
+import project2 from "../assets/project2.png";
 import project3 from "../assets/project2.jpg";
 import project4 from "../assets/project2.jpg";
 import { project } from "../types/project";
@@ -12,11 +12,10 @@ export const PROJECTS: project[] = [
     imageUrl: project1,
   },
   {
-    title: "XXX App",
-    description: "Coming soon...",
-    // description:
-    //   "A responsive weather application using React Native and a third-party API.",
-    url: "",
+    title: "Legacy Personal Site",
+    description:
+      "My personal website project at 2023, built with vanilla HTML, CSS, Javascript.",
+    url: "https://natsuki-site-legacy.vercel.app/",
     imageUrl: project2,
   },
   {
