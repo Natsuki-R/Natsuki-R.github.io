@@ -17,17 +17,17 @@ const Header: React.FC = () => {
           <Link to="/about">About</Link>
         </div>
         <div>
+          <Link to="/projects">Project</Link>
+        </div>
+        <div>
+          <Link to="/bookmark">Bookmark</Link>
+        </div>
+        <div>
           <Link to="/blog">Blog</Link>
         </div>
         <div>
           <Link to="/music">Music</Link>
         </div>
-        <div>
-          <Link to="/bookmark">Bookmark</Link>
-        </div>
-        {/* <div>
-          <Link to="/projects">Projects</Link>
-        </div> */}
         {/* <div>
           <Link to="/contact">Contact</Link>
         </div> */}

@@ -1,5 +1,5 @@
 .projects {
-    padding: 4rem 2rem;
+    padding: 2rem;
     background-color: #fff;
 }
 
@@ -11,13 +11,17 @@
 .projects-content h2 {
     font-size: 2rem;
     color: #333;
-    margin-bottom: 2rem;
+    margin-top: 0;
     text-align: center;
 }
 
+/* 
+auto-fill : keeps extra invisible columns, maintaining grid structure.
+auto-fit : collapses unused columns and expands the existing ones to fill space. 
+*/
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -43,7 +47,7 @@
 .project-card h3 {
     font-size: 1.25rem;
     color: #333;
-    margin: 1rem;
+    margin: 0;
 }
 
 .project-card p {

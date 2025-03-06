@@ -12,6 +12,11 @@ const Projects: React.FC = () => {
             <div key={index} className="project-card">
               <img src={project.imageUrl} alt={project.title} />
               <h3>{project.title}</h3>
+              {project.url && (
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  Preview Link
+                </a>
+              )}
               <p>{project.description}</p>
             </div>
           ))}
