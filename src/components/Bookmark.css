@@ -102,3 +102,14 @@
 /* .bookmark-links a:hover {
   text-decoration: underline;
 } */
+
+.podcast-container {
+  text-align: left;
+}
+
+.podcast-container .podcast-item a {
+  color: #f8f8f8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-skip-ink: none;
+}

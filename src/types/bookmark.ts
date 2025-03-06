@@ -6,3 +6,8 @@ export interface Bookmark {
   category?: string;
   completed?: boolean;
 }
+
+export interface Podcast {
+  title: string;
+  url: string;
+}

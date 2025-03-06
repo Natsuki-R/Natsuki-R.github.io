@@ -1,4 +1,4 @@
-import { Bookmark } from "../types/bookmark";
+import { Bookmark, Podcast } from "../types/bookmark";
 
 export const BOOKMARKS: Bookmark[] = [
   {
@@ -55,5 +55,25 @@ export const CHECK_LIST: Bookmark[] = [
     url: "https://thecrashcourse.com/topic/botany/",
     category: "Science",
     completed: false,
+  },
+];
+
+export const PODCAST_LIST: Podcast[] = [
+  {
+    title: "Joe Experience With Naval",
+    // url: "https://open.spotify.com/episode/6a6OCbv8Zrk2f2CZMNxhyc?si=d70c6e27cdb14560",
+    url: "https://www.youtube.com/watch?v=3qHkcs3kG44",
+  },
+  {
+    title: "Naval Rivikant On Happiness, reducing Anxiety And love",
+    url: "https://open.spotify.com/episode/24bTtgIVEDgrkeFe0rQxiR?si=7r9fxjDJQkmR454EysWSkg",
+  },
+  {
+    title: "Naval How to get Rich",
+    url: "https://open.spotify.com/episode/7eMQHZ36LT2fzxFzfdvOFz?si=9xitxu3ZQpib0FrwvlLe_g",
+  },
+  {
+    title: "Steven Bartlett - The Savings Expert: “Do Not Buy A House!”",
+    url: "https://open.spotify.com/episode/6JoRHviqsaRyWhxmASmJ6r?si=GzqmsZ-sQkah5Xv9mDZ1cQ",
   },
 ];

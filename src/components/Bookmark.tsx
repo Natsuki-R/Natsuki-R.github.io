@@ -1,7 +1,10 @@
 import React from "react";
 import "./Bookmark.css";
-import { BOOKMARKS, CHECK_LIST } from "../data/bookmark";
-import { Bookmark as BookmarkType } from "../types/bookmark";
+import { BOOKMARKS, CHECK_LIST, PODCAST_LIST } from "../data/bookmark";
+import {
+  Bookmark as BookmarkType,
+  Podcast as PodcastType,
+} from "../types/bookmark";
 
 const BookmarkItem: React.FC<{ bookmark: BookmarkType }> = ({ bookmark }) => {
   return (
@@ -43,9 +46,30 @@ const BookmarkItem: React.FC<{ bookmark: BookmarkType }> = ({ bookmark }) => {
   );
 };
 
+const PodcastItem: React.FC<{ podcast: PodcastType }> = ({ podcast }) => {
+  return (
+    <li className={`podcast-item`}>
+      {podcast.url && (
+        <a href={podcast.url} target="_blank" rel="noopener noreferrer">
+          {podcast.title}
+        </a>
+      )}
+    </li>
+  );
+};
+
 const Bookmark: React.FC = () => {
   return (
     <section id="bookmark" className="bookmark">
+      <div className="bookmark-section">
+        <h2>Podcasts</h2>
+        <ul className="podcast-container">
+          {PODCAST_LIST.map((p, index) => (
+            <PodcastItem key={index} podcast={p} />
+          ))}
+        </ul>
+      </div>
+
       <div className="bookmark-section">
         <h2>Completed Learning</h2>
         <div className="bookmark-grid">
