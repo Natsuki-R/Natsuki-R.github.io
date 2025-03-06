@@ -896,8 +896,8 @@ const DEATH: Artist = {
       id: 4,
       name: "Individual Thought Patterns",
       releasedYear: 1993,
-      isListened: false,
-      ranking: 8,
+      isListened: true,
+      ranking: 7,
     },
     {
       id: 5,
@@ -1056,11 +1056,11 @@ const JUDAS_PRIEST: Artist = {
   ],
 };
 
-const THOM_YORKE: Artist = {
-  name: "Thom Yorke",
-  genre: "an English musician",
-  albums: [],
-};
+// const THOM_YORKE: Artist = {
+//   name: "Thom Yorke",
+//   genre: "an English musician",
+//   albums: [],
+// };
 
 const PLACEBO: Artist = {
   name: "Placebo",
@@ -1202,40 +1202,40 @@ const RADIOHEAD: Artist = {
   ],
 };
 
-const SIGUR_ROS: Artist = {
-  name: "Sigur Rós",
-  genre: "Icelandic-post-rock",
-  albums: [
-    {
-      id: 0,
-      name: "( )",
-      releasedYear: 2002,
-      isListened: true,
-      ranking: 7,
-    },
-    {
-      id: 1,
-      name: "ATTA",
-      releasedYear: 2023,
-      isListened: true,
-      ranking: 7,
-    },
-    {
-      id: 2,
-      name: "Valtari",
-      releasedYear: 2012,
-      isListened: true,
-      ranking: 7,
-    },
-    {
-      id: 3,
-      name: "Takk...",
-      releasedYear: 2005,
-      isListened: true,
-      ranking: 7,
-    },
-  ],
-};
+// const SIGUR_ROS: Artist = {
+//   name: "Sigur Rós",
+//   genre: "Icelandic-post-rock",
+//   albums: [
+//     {
+//       id: 0,
+//       name: "( )",
+//       releasedYear: 2002,
+//       isListened: true,
+//       ranking: 7,
+//     },
+//     {
+//       id: 1,
+//       name: "ATTA",
+//       releasedYear: 2023,
+//       isListened: true,
+//       ranking: 7,
+//     },
+//     {
+//       id: 2,
+//       name: "Valtari",
+//       releasedYear: 2012,
+//       isListened: true,
+//       ranking: 7,
+//     },
+//     {
+//       id: 3,
+//       name: "Takk...",
+//       releasedYear: 2005,
+//       isListened: true,
+//       ranking: 7,
+//     },
+//   ],
+// };
 
 const MONO: Artist = {
   name: "Mono",
@@ -2049,13 +2049,26 @@ const LEONARD_COHEN: Artist = {
   ],
 };
 
+const STONE_SOUR: Artist = {
+  name: "Stone Sour",
+  genre: "heavy-metal",
+  albums: [],
+};
+
+const SLIPKNOT: Artist = {
+  name: "Slipknot",
+  genre: "heavy-metal",
+  albums: [],
+};
+
 export const ARTISTS: Artist[] = [
   MATH_ROCK_TOP_50,
+  STONE_SOUR,
+  SLIPKNOT,
   DARK_TRANQUILLITY,
   GnR,
   LED_ZEPPELIN,
   DEATH,
-  SIGUR_ROS,
   JUDAS_PRIEST,
   RAGE_AGAINST_THE_MACHINE,
   GOD_IS_AN_ASTRONAUT,
@@ -2069,7 +2082,8 @@ export const ARTISTS: Artist[] = [
   THE_CURE,
   MOGWAI,
   MONO,
-  THOM_YORKE,
+  // THOM_YORKE,
   RADIOHEAD,
   IRON_MAIDEN,
+  // SIGUR_ROS,
 ];
