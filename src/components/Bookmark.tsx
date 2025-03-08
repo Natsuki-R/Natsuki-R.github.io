@@ -9,9 +9,8 @@ import {
 const BookmarkItem: React.FC<{ bookmark: BookmarkType }> = ({ bookmark }) => {
   return (
     <div
-      className={`bookmark-item ${
-        bookmark.category?.toLowerCase().replace(" ", "-") || ""
-      }`}
+      className={`bookmark-item ${bookmark.category?.toLowerCase().replace(" ", "-") || ""
+        }`}
     >
       <div className="bookmark-header">
         <h3 className="bookmark-title">
@@ -61,6 +60,7 @@ const PodcastItem: React.FC<{ podcast: PodcastType }> = ({ podcast }) => {
 const Bookmark: React.FC = () => {
   return (
     <section id="bookmark" className="bookmark">
+
       <div className="bookmark-section">
         <h2>Podcasts</h2>
         <ul className="podcast-container">
@@ -95,6 +95,15 @@ const Bookmark: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* <div className="bookmark-section">
+        <h2>Qiita</h2>
+        <ul className="podcast-container">
+          {QIITA_LIST.map((p, index) => (
+            <PodcastItem key={index} podcast={p} />
+          ))}
+        </ul>
+      </div> */}
     </section>
   );
 };

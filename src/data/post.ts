@@ -10,13 +10,15 @@ const POSTS: Post[] = [
       "https://open.spotify.com/episode/5CBUg4x9dn7WHgokAkrvr3?si=taD5vgYBTY68ajeiU1zgdw&t=1102",
     ],
   },
-  // {
-  //   timeStamp: "2024/8/4 at 01:31",
-  //   content: "I finished this book. Nice one.",
-  //   links: [
-  //     "https://mcusoft.wordpress.com/wp-content/uploads/2015/04/the-art-of-readable-code.pdf",
-  //   ],
-  // },
+  {
+    timeStamp: "2025/3/9 at 04:38",
+    content: `Just tried Tavus AI for the first time—pretty impressive. Way better than the text/audio AI interaction in the Replika app.
+            We never truly realize how crucial facial expressions are in communication. Though it’s still not perfect, I can see its future applications, especially in psychology and therapy.
+            Also reminds me of the electronic pet from Ted Chiang’s sci-fi story. Anyway, I want Detroit: Become Human to become real—real real.`,
+    links: [
+      "https://www.tavus.io/",
+    ],
+  },
   {
     timeStamp: "2024/7/21 at 08:03",
     content: `Work will expand to fill the amount of time you allowed for it. /nParkinson’s law`,

@@ -1,4 +1,5 @@
 export const SPHERE_TEXT: string[] = [
+  "Pixel Art",
   "React",
   "Vue",
   "Javascript",

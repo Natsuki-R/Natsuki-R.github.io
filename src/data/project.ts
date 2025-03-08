@@ -1,6 +1,6 @@
 import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
-import project3 from "../assets/project2.jpg";
+import project3 from "../assets/project3.png";
 import project4 from "../assets/project2.jpg";
 import { project } from "../types/project";
 
@@ -19,13 +19,13 @@ export const PROJECTS: project[] = [
     imageUrl: project2,
   },
   {
-    title: "XXX App",
-    description: "Coming soon...",
-    url: "",
+    title: "3D Cemetery",
+    description: "You can design your own cemetery funeral experience with 3D models.",
+    url: "https://3d-cemetery.vercel.app/",
     imageUrl: project3,
   },
   {
-    title: "XXX App",
+    title: "3D Gallery",
     description: "Coming soon...",
     url: "",
     imageUrl: project4,
