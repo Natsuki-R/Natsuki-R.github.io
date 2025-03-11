@@ -44,7 +44,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<CanvasWrapper />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/entrance" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/about" element={<About />} />
           <Route path="/music" element={<Music />} />

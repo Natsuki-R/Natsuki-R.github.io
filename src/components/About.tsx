@@ -14,11 +14,6 @@ const About: React.FC = () => {
             <br />
             connecting the dots — Steve Jobs
           </p>
-          <p>
-            As the saying goes, <br />
-            "If you want to manage something, keep track of it at first." <br />
-            That’s why I build this site—to manage my time and my life.
-          </p>
         </div>
         <div className="about-image">
           <img src={slogan} alt="Your Name" />

@@ -138,8 +138,19 @@
 
 /* Adjustments for smaller screens */
 @media (max-width: 768px) {
+    .music-container {
+        padding: 0;
+    }
+
     .music-title {
         font-size: 5vw;
+        border: none;
+        padding: initial;
+        margin: 40px 0;
+    }
+
+    .music-grid {
+        gap: 18px;
     }
 
     .artist-name {

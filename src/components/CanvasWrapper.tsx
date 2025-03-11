@@ -8,7 +8,7 @@ const CanvasWrapper: React.FC = () => {
   return (
     <div className="canvas-container">
       <div className="logo-container">
-        <Link to="/home">
+        <Link to="/about">
           <img src={avatar} className="logo" />
         </Link>
         <p>See More</p>

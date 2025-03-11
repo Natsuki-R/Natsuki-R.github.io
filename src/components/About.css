@@ -41,6 +41,10 @@
 }
 
 @media (max-width: 768px) {
+    .about {
+        margin-top: 60px;
+    }
+
     .about-content {
         flex-direction: column-reverse;
     }
