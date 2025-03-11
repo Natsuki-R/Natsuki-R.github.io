@@ -543,11 +543,11 @@ const DARK_TRANQUILLITY: Artist = {
             ranking: 8,
         },
         {
-            id: 4,
-            name: "Character",
-            releasedYear: 2005,
-            isListened: false,
-            ranking: 7,
+          id: 4,
+          name: "Character",
+          releasedYear: 2005,
+          isListened: true,
+          ranking: 8,
         },
         {
             id: 5,

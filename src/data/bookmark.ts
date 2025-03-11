@@ -60,6 +60,12 @@ export const CHECK_LIST: Bookmark[] = [
     category: "Math",
     completed: false,
   },
+  {
+    title: "How I use LLMs",
+    url: "https://www.youtube.com/watch?v=EWvNQjAaOHw",
+    category: "Math",
+    completed: false,
+  },
 ];
 
 export const PODCAST_LIST: Podcast[] = [
