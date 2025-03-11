@@ -1,48 +1,192 @@
-import React from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import "./Blog.css";
 import { sortedPosts as POSTS } from "../data/post";
 
+const POSTS_PER_PAGE = 5;
+
 const Blog: React.FC = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedYear, setSelectedYear] = useState<string | null>(null);
+
+  // Reset to first page when year filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedYear]);
+
+  // Extract unique years from post timestamps
+  const availableYears = useMemo(() => {
+    const years = POSTS.map((post) => {
+      return post.timeStamp.split("/")[0];
+    });
+    return [...new Set(years)].sort((a, b) => parseInt(b) - parseInt(a));
+  }, []);
+
+  // Filter posts by selected year
+  const filteredPosts = useMemo(() => {
+    if (!selectedYear) return POSTS;
+    return POSTS.filter((post) => post.timeStamp.startsWith(selectedYear));
+  }, [POSTS, selectedYear]);
+
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+  const paginatedPosts = useMemo(() => {
+    const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+    return filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+  }, [filteredPosts, currentPage]);
+
+  // Format timestamp for better readability
+  const formatTimestamp = (timestamp: string): string => {
+    // Parse the timestamp manually to ensure cross-browser compatibility
+    const parts = timestamp.split(" at ");
+    const datePart = parts[0];
+    const timePart = parts[1] || "00:00";
+
+    const [year, month, day] = datePart.split("/").map((num) => parseInt(num));
+    const [hours, minutes] = timePart.split(":").map((num) => parseInt(num));
+
+    // Create date using individual components (months are 0-indexed in JS Date)
+    const date = new Date(year, month - 1, day, hours, minutes);
+
+    if (isNaN(date.getTime())) {
+      // Fallback formatting if parsing fails
+      return timestamp;
+    }
+
+    // Format the date
+    const options: Intl.DateTimeFormatOptions = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    };
+
+    return date.toLocaleDateString("en-US", options);
+  };
+
+  // Navigate to different pages
+  const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="blog-container">
-      {POSTS.map((post, index) => (
-        <div key={index} className="post">
-          <span className="timestamp">{post.timeStamp}</span>
-
-          <div className="post-content">
-            {post.content.split("/n").map((line, idx) => (
-              <React.Fragment key={idx}>
-                {line}
-                <br />
-              </React.Fragment>
+      <div className="blog-controls">
+        <div className="year-filter">
+          <label htmlFor="yearSelect">Filter by year: </label>
+          <select
+            id="yearSelect"
+            value={selectedYear || ""}
+            onChange={(e) => setSelectedYear(e.target.value || null)}
+          >
+            <option value="">All Years</option>
+            {availableYears.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
             ))}
-            {post.location && (
-              <p className="location">Location: {post.location}</p>
-            )}
-            <div className="post-links">
-              {post.links?.map((link, index) => (
-                <a
-                  key={index}
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {link}
-                </a>
-              ))}
-            </div>
-            <div className="post-images">
-              {post.images?.map((image) => (
-                <img
-                  key={image.id}
-                  src={image.src}
-                  alt={`Post Image ${image.id}`}
-                />
-              ))}
-            </div>
-          </div>
+          </select>
         </div>
-      ))}
+
+        {filteredPosts.length > 0 ? (
+          <div className="post-count">
+            Showing {paginatedPosts.length} of {filteredPosts.length} posts
+          </div>
+        ) : (
+          <div className="post-count">No posts found</div>
+        )}
+      </div>
+
+      {paginatedPosts.length > 0 ? (
+        <>
+          <div className="posts-list">
+            {paginatedPosts.map((post, index) => (
+              <article key={index} className="post">
+                <time className="timestamp">
+                  {formatTimestamp(post.timeStamp)}
+                </time>
+                <div className="post-content">
+                  {post.content?.split("/n").map((line, idx) => (
+                    <React.Fragment key={idx}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
+                  {post.links && post.links.length > 0 && (
+                    <div className="post-links">
+                      {post.links.map((link, linkIndex) => (
+                        <a
+                          key={linkIndex}
+                          href={link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {link}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                  {post.images && post.images.length > 0 && (
+                    <div className="post-images">
+                      {post.images.map((image) => (
+                        <img
+                          key={image.id}
+                          src={image.src}
+                          alt={`Post image ${image.id}`}
+                          loading="lazy"
+                        />
+                      ))}
+                    </div>
+                  )}
+                  {post.location && (
+                    <p className="location">Location: {post.location}</p>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="pagination">
+            <button
+              className="pagination-btn"
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+            >
+              &laquo; Previous
+            </button>
+
+            <div className="page-indicators">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => (
+                  <button
+                    key={page}
+                    className={`page-indicator ${
+                      currentPage === page ? "active" : ""
+                    }`}
+                    onClick={() => handlePageChange(page)}
+                  >
+                    {page}
+                  </button>
+                )
+              )}
+            </div>
+
+            <button
+              className="pagination-btn"
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+            >
+              Next &raquo;
+            </button>
+          </div>
+        </>
+      ) : (
+        <div className="empty-state">
+          <p>Oops, No posts found for this year.</p>
+        </div>
+      )}
     </div>
   );
 };
