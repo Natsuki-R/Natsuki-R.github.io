@@ -132,8 +132,3 @@
         padding: 0.5rem 0;
     }
 }
-
-/* BUG: when scrolling on the main document when the mobile menu is open, hiding the scrollbar and preventing users from scrolling the background content. */
-.App.menu-open {
-    overflow: unset;
-}

@@ -1,24 +1,33 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import avatar from "../../assets/avatar.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const scrollY = useRef(0);
 
-  // Toggle menu state
+  // Toggle menu state with a more robust approach
   const toggleMenu = () => {
     const newMenuState = !isMenuOpen;
     setIsMenuOpen(newMenuState);
 
-    // Toggle overflow on App div
-    const appElement = document.querySelector(".App");
-    if (appElement) {
-      if (newMenuState) {
-        appElement.classList.add("menu-open");
-      } else {
-        appElement.classList.remove("menu-open");
-      }
+    if (newMenuState) {
+      // Store current scroll position
+      scrollY.current = window.scrollY;
+
+      // Apply styles to body
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY.current}px`;
+      document.body.style.width = "100%";
+      document.body.style.overflow = "hidden";
+    } else {
+      // Restore scroll position
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      document.body.style.overflow = "";
+      window.scrollTo(0, scrollY.current);
     }
   };
 
@@ -27,10 +36,13 @@ const Header: React.FC = () => {
     const handleResize = () => {
       if (window.innerWidth > 768 && isMenuOpen) {
         setIsMenuOpen(false);
-        const appElement = document.querySelector(".App");
-        if (appElement) {
-          appElement.classList.remove("menu-open");
-        }
+
+        // Restore scroll position
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+        document.body.style.overflow = "";
+        window.scrollTo(0, scrollY.current);
       }
     };
 
@@ -38,10 +50,14 @@ const Header: React.FC = () => {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+
       // Clean up when component unmounts
-      const appElement = document.querySelector(".App");
-      if (appElement) {
-        appElement.classList.remove("menu-open");
+      if (isMenuOpen) {
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+        document.body.style.overflow = "";
+        window.scrollTo(0, scrollY.current);
       }
     };
   }, [isMenuOpen]);
