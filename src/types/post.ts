@@ -1,14 +1,17 @@
 export type Image = {
   id: number;
   src: string;
-  alt?: string; // Added for accessibility
+  alt?: string; // for accessibility
 };
 
 export type Post = {
   id: string;
-  timeStamp: string;
-  date?: Date; // Added parsed date for easier sorting/filtering
   images?: Image[];
+  createdYear: number;
+  createdMonth: number;
+  createdDate: number;
+  createdTime: string;
+  parsedDate: Date; // Storing the actual Date object for easier manipulation  images?: Image[];
   content?: string;
   links?: string[];
   location?: string;

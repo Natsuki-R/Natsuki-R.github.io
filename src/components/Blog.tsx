@@ -4,27 +4,39 @@ import { sortedPosts as POSTS } from "../data/post";
 
 const POSTS_PER_PAGE = 5;
 
+// Formatter instances for reuse
+const dateFormatter = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+
+const timeFormatter = new Intl.DateTimeFormat("en-US", {
+  hour: "2-digit",
+  minute: "2-digit",
+});
+
 const Blog: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedYear, setSelectedYear] = useState<string | null>(null);
+  const [selectedYear, setSelectedYear] = useState<number | null>(null);
 
   // Reset to first page when year filter changes
   useEffect(() => {
     setCurrentPage(1);
   }, [selectedYear]);
 
-  // Extract unique years from post timestamps
+  // Extract unique years from post dates using the parsedDate
   const availableYears = useMemo(() => {
-    const years = POSTS.map((post) => {
-      return post.timeStamp.split("/")[0];
-    });
-    return [...new Set(years)].sort((a, b) => parseInt(b) - parseInt(a));
+    const years = POSTS.map((post) => post.parsedDate.getFullYear());
+    return [...new Set(years)].sort((a, b) => b - a); // Sort descending (newest first)
   }, []);
 
-  // Filter posts by selected year
+  // Filter posts by selected year using parsedDate
   const filteredPosts = useMemo(() => {
     if (!selectedYear) return POSTS;
-    return POSTS.filter((post) => post.timeStamp.startsWith(selectedYear));
+    return POSTS.filter(
+      (post) => post.parsedDate.getFullYear() === selectedYear
+    );
   }, [POSTS, selectedYear]);
 
   // Calculate pagination
@@ -34,34 +46,16 @@ const Blog: React.FC = () => {
     return filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
   }, [filteredPosts, currentPage]);
 
-  // Format timestamp for better readability
-  const formatTimestamp = (timestamp: string): string => {
-    // Parse the timestamp manually to ensure cross-browser compatibility
-    const parts = timestamp.split(" at ");
-    const datePart = parts[0];
-    const timePart = parts[1] || "00:00";
-
-    const [year, month, day] = datePart.split("/").map((num) => parseInt(num));
-    const [hours, minutes] = timePart.split(":").map((num) => parseInt(num));
-
-    // Create date using individual components (months are 0-indexed in JS Date)
-    const date = new Date(year, month - 1, day, hours, minutes);
-
-    if (isNaN(date.getTime())) {
-      // Fallback formatting if parsing fails
-      return timestamp;
+  // Clean formatting function using Intl.DateTimeFormat
+  const formatDate = (date: Date): string => {
+    if (!date || isNaN(date.getTime())) {
+      return "Invalid date";
     }
 
-    // Format the date
-    const options: Intl.DateTimeFormatOptions = {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    };
+    const formattedDate = dateFormatter.format(date);
+    const formattedTime = timeFormatter.format(date);
 
-    return date.toLocaleDateString("en-US", options);
+    return `${formattedDate} at ${formattedTime}`;
   };
 
   // Navigate to different pages
@@ -78,8 +72,10 @@ const Blog: React.FC = () => {
           <label htmlFor="yearSelect">Filter by year: </label>
           <select
             id="yearSelect"
-            value={selectedYear || ""}
-            onChange={(e) => setSelectedYear(e.target.value || null)}
+            value={selectedYear?.toString() || ""}
+            onChange={(e) =>
+              setSelectedYear(e.target.value ? parseInt(e.target.value) : null)
+            }
           >
             <option value="">All Years</option>
             {availableYears.map((year) => (
@@ -104,8 +100,11 @@ const Blog: React.FC = () => {
           <div className="posts-list">
             {paginatedPosts.map((post, index) => (
               <article key={index} className="post">
-                <time className="timestamp">
-                  {formatTimestamp(post.timeStamp)}
+                <time
+                  className="timestamp"
+                  dateTime={post.parsedDate.toISOString()}
+                >
+                  {formatDate(post.parsedDate)}
                 </time>
                 <div className="post-content">
                   {post.content?.split("/n").map((line, idx) => (
@@ -134,7 +133,7 @@ const Blog: React.FC = () => {
                         <img
                           key={image.id}
                           src={image.src}
-                          alt={`Post image ${image.id}`}
+                          alt={image.alt || ``}
                           loading="lazy"
                         />
                       ))}
