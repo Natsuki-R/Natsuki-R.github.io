@@ -1,7 +1,7 @@
 import { Artist } from "../types/music";
 
-const MATH_ROCK_TOP_50: Artist = {
-    name: "Math Rock Playlist",
+const MATH_ROCK_PLAYLIST: Artist = {
+    name: "Math Rock Top 50",
     genre: "math-rock",
     albums: [
         {
@@ -2098,6 +2098,20 @@ const STONE_SOUR: Artist = {
     ]
 };
 
+const INSOMNIUM: Artist = {
+    name: "Insomnium",
+    genre: "melodic-death-metal",
+    albums: [
+        {
+            id: 0,
+            name: "Shadows of the Dying Sun",
+            releasedYear: 2014,
+            isListened: true,
+            ranking: 9
+        }
+    ]
+};
+
 const SLIPKNOT: Artist = {
     name: "Slipknot",
     genre: "heavy-metal",
@@ -2155,7 +2169,7 @@ const SLIPKNOT: Artist = {
 };
 
 const INDIE_PLAYLIST: Artist = {
-    name: "Indie Playlist",
+    name: "Indie",
     genre: "indie",
     albums: [
         {
@@ -2182,11 +2196,34 @@ const INDIE_PLAYLIST: Artist = {
     ]
 };
 
+const POST_ROCK_PLAYLIST: Artist = {
+    name: "Post Rock",
+    genre: "post-rock",
+    albums: [
+        {
+            id: 0,
+            name: "Overhead, The Albatross - I Leave You This",
+            releasedYear: 2024,
+            isListened: true,
+            ranking: 9
+        },
+        {
+            id: 0,
+            name: "Empires Of Light - The Highwayman",
+            releasedYear: 2024,
+            isListened: true,
+            ranking: 8
+        }
+    ]
+};
+
 export const ARTISTS: Artist[] = [
-    MATH_ROCK_TOP_50,
+    MATH_ROCK_PLAYLIST,
+    POST_ROCK_PLAYLIST,
     INDIE_PLAYLIST,
     STONE_SOUR,
     SLIPKNOT,
+    INSOMNIUM,
     DARK_TRANQUILLITY,
     GnR,
     LED_ZEPPELIN,
