@@ -7,10 +7,6 @@ export type Image = {
 export type Post = {
   id: string;
   images?: Image[];
-  createdYear: number;
-  createdMonth: number;
-  createdDate: number;
-  createdTime: string;
   parsedDate: Date; // Storing the actual Date object for easier manipulation  images?: Image[];
   content?: string;
   links?: string[];

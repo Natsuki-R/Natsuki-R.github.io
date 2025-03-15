@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import "./Blog.css";
 import { sortedPosts as POSTS } from "../data/post";
 
-const POSTS_PER_PAGE = 5;
+const POSTS_PER_PAGE = 4;
 
 // Formatter instances for reuse
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
@@ -129,9 +129,9 @@ const Blog: React.FC = () => {
                   )}
                   {post.images && post.images.length > 0 && (
                     <div className="post-images">
-                      {post.images.map((image) => (
+                      {post.images.map((image, idx) => (
                         <img
-                          key={image.id}
+                          key={idx}
                           src={image.src}
                           alt={image.alt || ``}
                           loading="lazy"
@@ -161,9 +161,8 @@ const Blog: React.FC = () => {
                 (page) => (
                   <button
                     key={page}
-                    className={`page-indicator ${
-                      currentPage === page ? "active" : ""
-                    }`}
+                    className={`page-indicator ${currentPage === page ? "active" : ""
+                      }`}
                     onClick={() => handlePageChange(page)}
                   >
                     {page}
