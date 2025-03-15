@@ -543,11 +543,11 @@ const DARK_TRANQUILLITY: Artist = {
             ranking: 8,
         },
         {
-          id: 4,
-          name: "Character",
-          releasedYear: 2005,
-          isListened: true,
-          ranking: 8,
+            id: 4,
+            name: "Character",
+            releasedYear: 2005,
+            isListened: true,
+            ranking: 8,
         },
         {
             id: 5,
@@ -749,8 +749,8 @@ const GnR: Artist = {
             id: 3,
             name: "GN'R Lies",
             releasedYear: 1988,
-            isListened: false,
-            ranking: 7,
+            isListened: true,
+            ranking: 8,
         },
         {
             id: 4,
@@ -763,10 +763,66 @@ const GnR: Artist = {
             id: 5,
             name: "The Spaghetti Incident?",
             releasedYear: 1993,
-            isListened: false,
-            ranking: 9,
+            isListened: true,
+            ranking: 8,
         },
     ],
+};
+
+const ALCEST: Artist = {
+    name: "Alcest",
+    genre: "post-black-metal",
+    albums: [
+        {
+            id: 0,
+            name: "Souvenirs d'un autre monde",
+            releasedYear: 2007,
+            isListened: true,
+            ranking: 8
+        },
+        {
+            id: 1,
+            name: "Écailles de lune",
+            releasedYear: 2010,
+            isListened: true,
+            ranking: 8
+        },
+        {
+            id: 2,
+            name: "Le secret",
+            releasedYear: 2011,
+            isListened: true,
+            ranking: 8
+        },
+        {
+            id: 3,
+            name: "Les Voyages de l'âme",
+            releasedYear: 2012,
+            isListened: true,
+            ranking: 8
+        },
+        {
+            id: 4,
+            name: "Shelter",
+            releasedYear: 2014,
+            isListened: true,
+            ranking: 8
+        },
+        {
+            id: 5,
+            name: "Kodama",
+            releasedYear: 2016,
+            isListened: true,
+            ranking: 8
+        },
+        {
+            id: 6,
+            name: "Les Chants de l'aurore",
+            releasedYear: 2024,
+            isListened: true,
+            ranking: 8
+        }
+    ]
 };
 
 const MOGWAI: Artist = {
@@ -868,7 +924,7 @@ const DEATH: Artist = {
             id: 0,
             name: "Scream Bloody Gore",
             releasedYear: 1987,
-            isListened: false,
+            isListened: true,
             ranking: 8,
         },
         {
@@ -1804,89 +1860,100 @@ const LED_ZEPPELIN: Artist = {
     ],
 };
 
-const METALLICA: Artist = {
-    name: "Metallica",
-    genre: "metal",
-    albums: [
-        {
-            id: 0,
-            name: "Kill 'Em All",
-            releasedYear: 1983,
-            isListened: false,
-            ranking: 1,
-        },
-        {
-            id: 1,
-            name: "Ride the Lightning",
-            releasedYear: 1984,
-            isListened: false,
-            ranking: 1,
-        },
-        {
-            id: 2,
-            name: "Master of Puppets",
-            releasedYear: 1986,
-            isListened: false,
-            ranking: 1,
-        },
-        // {
-        //     id: 3,
-        //     name: "...And Justice for All",
-        //     releasedYear: 1988,
-        //     isListened: false,
-        //     ranking: 1
-        // },
-        // {
-        //     id: 4,
-        //     name: "Metallica",
-        //     releasedYear: 1991,
-        //     isListened: false,
-        //     ranking: 1
-        // },
-        // {
-        //     id: 5,
-        //     name: "Load",
-        //     releasedYear: 1996,
-        //     isListened: false,
-        //     ranking: 1
-        // },
-        // {
-        //     id: 6,
-        //     name: "Reload",
-        //     releasedYear: 1997,
-        //     isListened: false,
-        //     ranking: 1
-        // },
-        // {
-        //     id: 7,
-        //     name: "St. Anger",
-        //     releasedYear: 2003,
-        //     isListened: false,
-        //     ranking: 1
-        // },
-        {
-            id: 8,
-            name: "Death Magnetic",
-            releasedYear: 2008,
-            isListened: false,
-            ranking: 1,
-        },
-        // {
-        //     id: 9,
-        //     name: "Hardwired... to Self-Destruct",
-        //     releasedYear: 2016,
-        //     isListened: false,
-        //     ranking: 1
-        // },
-        // {
-        //     id: 10,
-        //     name: "72 Seasons",
-        //     releasedYear: 2023,
-        //     isListened: false,
-        //     ranking: 1
-        // }
-    ],
-};
+// const METALLICA: Artist = {
+//     name: "Metallica",
+//     genre: "metal",
+//     albums: [
+// {
+//     id: 0,
+//     artistName: "Metallica",
+//     name: "Kill 'Em All",
+//     releasedYear: 1983,
+//     isListened: false,
+//     ranking: 1,
+// },
+// {
+//     id: 1,
+//     artistName: "Metallica",
+//     name: "Ride the Lightning",
+//     releasedYear: 1984,
+//     isListened: false,
+//     ranking: 1,
+// },
+// {
+//     id: 2,
+//     artistName: "Metallica",
+//     name: "Master of Puppets",
+//     releasedYear: 1986,
+//     isListened: false,
+//     ranking: 1,
+// },
+// {
+//     id: 3,
+// artistName: "Metallica",
+//     name: "...And Justice for All",
+//     releasedYear: 1988,
+//     isListened: false,
+//     ranking: 1
+// },
+// {
+//     id: 4,
+// artistName: "Metallica",
+//     name: "Metallica",
+//     releasedYear: 1991,
+//     isListened: false,
+//     ranking: 1
+// },
+// {
+//     id: 5,
+// artistName: "Metallica",
+//     name: "Load",
+//     releasedYear: 1996,
+//     isListened: false,
+//     ranking: 1
+// },
+// {
+//     id: 6,
+// artistName: "Metallica",
+//     name: "Reload",
+//     releasedYear: 1997,
+//     isListened: false,
+//     ranking: 1
+// },
+// {
+//     id: 7,
+// artistName: "Metallica",
+//     name: "St. Anger",
+//     releasedYear: 2003,
+//     isListened: false,
+//     ranking: 1
+// },
+// {
+//     id: 8,
+//     artistName: "Metallica",
+//     name: "Death Magnetic",
+//     releasedYear: 2008,
+//     isListened: false,
+//     ranking: 1,
+// },
+// {
+//     id: 9,
+// artistName: "Metallica",
+//     name: "Hardwired... to Self-Destruct",
+//     releasedYear: 2016,
+//     isListened: false,
+//     ranking: 1
+// },
+// {
+//     id: 10,
+// artistName: "Metallica",
+//     name: "72 Seasons",
+//     releasedYear: 2023,
+//     isListened: false,
+//     ranking: 1
+// }
+//     ],
+// };
 
 const DAVID_BOWIE: Artist = {
     name: "David Bowie",
@@ -2174,25 +2241,131 @@ const INDIE_PLAYLIST: Artist = {
     albums: [
         {
             id: 0,
-            name: "Tears for Fears - Songs from the Big Chair",
+            artistName: "Tears for Fears",
+            name: "Songs from the Big Chair",
             releasedYear: 1985,
             isListened: true,
             ranking: 10
         },
         {
             id: 1,
-            name: "Old Man Canyon - Delirium",
+            artistName: "Old Man Canyon",
+            name: "Delirium",
             releasedYear: 2016,
             isListened: true,
             ranking: 9,
         },
         {
             id: 2,
-            name: "The Avalanches - We Will Always Love You",
+            artistName: "The Avalanches",
+            name: "We Will Always Love You",
             releasedYear: 2020,
             isListened: true,
             ranking: 9
         }
+    ]
+};
+
+const METAL_PLAYLIST: Artist = {
+    name: "Metal Playlist",
+    genre: "metal",
+    albums: [
+        {
+            id: 0,
+            artistName: "Morbid Angel",
+            name: "Altars of Madness",
+            releasedYear: 1989,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 1,
+            artistName: "Morbid Angel",
+            name: "Blessed Are the Sick",
+            releasedYear: 1991,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 2,
+            artistName: "Morbid Angel",
+            name: "Covenant",
+            releasedYear: 1993,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 3,
+            artistName: "Burzum",
+            name: "The Depths of Darkness",
+            releasedYear: 1993,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 3,
+            artistName: "Dio",
+            name: "Holy Diver",
+            releasedYear: 1983,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 4,
+            artistName: "Dio",
+            name: "The Last in Line",
+            releasedYear: 1984,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 5,
+            artistName: "Venom",
+            name: " Black Metal",
+            releasedYear: 1982,
+            isListened: false,
+            ranking: 1
+        },
+        {
+            id: 6,
+            artistName: "Metallica",
+            name: "Kill 'Em All",
+            releasedYear: 1983,
+            isListened: false,
+            ranking: 1,
+        },
+        {
+            id: 7,
+            artistName: "Metallica",
+            name: "Ride the Lightning",
+            releasedYear: 1984,
+            isListened: false,
+            ranking: 1,
+        },
+        {
+            id: 8,
+            artistName: "Metallica",
+            name: "Master of Puppets",
+            releasedYear: 1986,
+            isListened: false,
+            ranking: 1,
+        },
+        {
+            id: 9,
+            artistName: "Metallica",
+            name: "Death Magnetic",
+            releasedYear: 2008,
+            isListened: false,
+            ranking: 1,
+        },
+        // {
+        //     id: 6,
+        //     artistName: "Maximum the Hormone",
+        //     name: "",
+        //     releasedYear: 1000,
+        //     isListened: false,
+        //     ranking: 1
+        // },
     ]
 };
 
@@ -2202,14 +2375,16 @@ const POST_ROCK_PLAYLIST: Artist = {
     albums: [
         {
             id: 0,
-            name: "Overhead, The Albatross - I Leave You This",
+            artistName: "Overhead, The Albatross",
+            name: "I Leave You This",
             releasedYear: 2024,
             isListened: true,
             ranking: 9
         },
         {
             id: 0,
-            name: "Empires Of Light - The Highwayman",
+            artistName: 'Empires Of Light',
+            name: "The Highwayman",
             releasedYear: 2024,
             isListened: true,
             ranking: 8
@@ -2220,25 +2395,26 @@ const POST_ROCK_PLAYLIST: Artist = {
 export const ARTISTS: Artist[] = [
     MATH_ROCK_PLAYLIST,
     POST_ROCK_PLAYLIST,
+    METAL_PLAYLIST,
     INDIE_PLAYLIST,
     STONE_SOUR,
     SLIPKNOT,
     INSOMNIUM,
     DARK_TRANQUILLITY,
-    GnR,
     LED_ZEPPELIN,
-    DEATH,
-    JUDAS_PRIEST,
     RAGE_AGAINST_THE_MACHINE,
     GOD_IS_AN_ASTRONAUT,
     SUEDE,
     TOE,
     PLACEBO,
     LEONARD_COHEN,
-    METALLICA,
     DAVID_BOWIE,
+    JUDAS_PRIEST,
     DREAM_THEATER,
+    GnR,
+    DEATH,
     THE_CURE,
+    ALCEST,
     MOGWAI,
     MONO,
     // THOM_YORKE,
