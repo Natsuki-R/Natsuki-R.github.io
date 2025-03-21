@@ -18,7 +18,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Animals",
             releasedYear: 2008,
             isListened: true,
-            ranking: 1,
+            ranking: 9,
         },
         {
             id: 2,
@@ -26,7 +26,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Hold Your Horse Is",
             releasedYear: 2002,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 3,
@@ -34,7 +34,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Lava Land",
             releasedYear: 2005,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 4,
@@ -82,7 +82,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "The Occident",
             releasedYear: 2015,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 10,
@@ -98,7 +98,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "No Drum and Bass in the Jazz Room",
             releasedYear: 2010,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 12,
@@ -114,7 +114,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Twin Galaxies",
             releasedYear: 2015,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 14,
@@ -122,7 +122,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Trees, Swallows, Houses",
             releasedYear: 2007,
             isListened: true,
-            ranking: 1,
+            ranking: 7
         },
         {
             id: 16,
@@ -130,7 +130,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "American Football",
             releasedYear: 1999,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 17,
@@ -138,7 +138,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "(untitled album)",
             releasedYear: 2005,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 18,
@@ -146,7 +146,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Patagonian Rats",
             releasedYear: 2010,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 19,
@@ -154,7 +154,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "What Burns Never Returns",
             releasedYear: 1998,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 20,
@@ -162,7 +162,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "The View from This Tower",
             releasedYear: 2000,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 22,
@@ -170,7 +170,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "More Skin With Milk Mouth",
             releasedYear: 2007,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 23,
@@ -178,7 +178,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Drugs To The Dear Youth",
             releasedYear: 2007,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 24,
@@ -194,7 +194,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "BOSH!",
             releasedYear: 2014,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 26,
@@ -202,7 +202,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Route One or Die",
             releasedYear: 2011,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 27,
@@ -210,7 +210,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Gangs",
             releasedYear: 2011,
             isListened: false,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 28,
@@ -218,7 +218,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Engine Takes To The Water",
             releasedYear: 1995,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 29,
@@ -226,7 +226,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Silent Earthling",
             releasedYear: 2016,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 30,
@@ -242,7 +242,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "S/T",
             releasedYear: 2001,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 32,
@@ -258,7 +258,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "We’ve Been Talking",
             releasedYear: 2010,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 34,
@@ -266,7 +266,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Calculating Infinity",
             releasedYear: 1998,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 35,
@@ -274,7 +274,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "X’ed Out",
             releasedYear: 2013,
             isListened: true,
-            ranking: 4,
+            ranking: 7,
         },
         {
             id: 36,
@@ -282,7 +282,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "We Do What We Can",
             releasedYear: 2018,
             isListened: true,
-            ranking: 4,
+            ranking: 7,
         },
         {
             id: 37,
@@ -346,7 +346,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "You Wanna Kiss About It?",
             releasedYear: 2011,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 45,
@@ -354,7 +354,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Yank Crime",
             releasedYear: 1994,
             isListened: true,
-            ranking: 1,
+            ranking: 7,
         },
         {
             id: 46,
@@ -370,7 +370,7 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "Home Alone",
             releasedYear: 2014,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 48,
@@ -378,15 +378,15 @@ const MATH_ROCK_PLAYLIST: Artist = {
             name: "And So I Watch You From Afar",
             releasedYear: 2009,
             isListened: true,
-            ranking: 1,
+            ranking: 8,
         },
         {
             id: 49,
             artistName: "Town Portal",
             name: "Chronopoly",
             releasedYear: 2012,
-            isListened: false,
-            ranking: 1,
+            isListened: true,
+            ranking: 7,
         },
     ],
 };
@@ -2235,6 +2235,45 @@ const SLIPKNOT: Artist = {
     ]
 };
 
+const PANTERA: Artist = {
+    name: "Pantera",
+    genre: "thrash-metal",
+    albums: [
+        {
+            id: 0,
+            artistName: "Pantera",
+            name: "Far Beyond Driven",
+            releasedYear: 1994,
+            isListened: true,
+            ranking: 9,
+        },
+        {
+            id: 1,
+            artistName: "Pantera",
+            name: "Vulgar Display of Power",
+            releasedYear: 1992,
+            isListened: true,
+            ranking: 8,
+        },
+        {
+            id: 2,
+            artistName: "Pantera",
+            name: "The Great Southern Trendkill",
+            releasedYear: 1996,
+            isListened: true,
+            ranking: 8,
+        },
+        {
+            id: 3,
+            artistName: "Pantera",
+            name: "Cowboys from Hell",
+            releasedYear: 1990,
+            isListened: true,
+            ranking: 8,
+        },
+    ]
+};
+
 const INDIE_PLAYLIST: Artist = {
     name: "Indie",
     genre: "indie",
@@ -2275,8 +2314,8 @@ const METAL_PLAYLIST: Artist = {
             artistName: "Morbid Angel",
             name: "Altars of Madness",
             releasedYear: 1989,
-            isListened: false,
-            ranking: 1
+            isListened: true,
+            ranking: 8
         },
         {
             id: 1,
@@ -2397,6 +2436,7 @@ export const ARTISTS: Artist[] = [
     POST_ROCK_PLAYLIST,
     METAL_PLAYLIST,
     INDIE_PLAYLIST,
+    PANTERA,
     STONE_SOUR,
     SLIPKNOT,
     INSOMNIUM,
