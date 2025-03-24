@@ -2271,6 +2271,14 @@ const PANTERA: Artist = {
       isListened: true,
       ranking: 8,
     },
+    {
+      id: 4,
+      artistName: "Pantera",
+      name: "Reinventing the Steel",
+      releasedYear: 2000,
+      isListened: true,
+      ranking: 8,
+    },
   ],
 };
 
@@ -2322,8 +2330,8 @@ const METAL_PLAYLIST: Artist = {
       artistName: "Morbid Angel",
       name: "Blessed Are the Sick",
       releasedYear: 1991,
-      isListened: false,
-      ranking: 1,
+      isListened: true,
+      ranking: 8,
     },
     {
       id: 2,
@@ -2334,12 +2342,20 @@ const METAL_PLAYLIST: Artist = {
       ranking: 1,
     },
     {
+      id: 200,
+      artistName: "Morbid Angel",
+      name: "Formulas Fatal to the Flesh",
+      releasedYear: 1998,
+      isListened: true,
+      ranking: 8,
+    },
+    {
       id: 3,
       artistName: "Burzum",
       name: "The Depths of Darkness",
       releasedYear: 1993,
-      isListened: false,
-      ranking: 1,
+      isListened: true,
+      ranking: 8,
     },
     {
       id: 3,

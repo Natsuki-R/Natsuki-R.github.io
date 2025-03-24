@@ -33,4 +33,7 @@ export const SPHERE_TEXT: string[] = [
   "Music",
   "Movie",
   "Books",
+  "Metal",
+  "Post Rock",
+  "Math Rock",
 ];
