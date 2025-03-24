@@ -22,6 +22,10 @@ export const BOOKMARKS: Bookmark[] = [
     noteUrl: "https://qiita.com/Natsuki_R/items/0d31c4ab179b33b7d320",
   },
   {
+    title: "The Great Saga of Odysseus",
+    url: "https://www.youtube.com/watch?v=_sENhQOfzu8",
+  },
+  {
     title: "The Most Useful Thing AI Has Ever Done",
     url: "https://www.youtube.com/watch?v=P_fHJIYENdI",
   },
@@ -49,9 +53,15 @@ export const BOOKMARKS: Bookmark[] = [
 
 export const CHECK_LIST: Bookmark[] = [
   {
-    title: "Crash Course: Botany",
-    url: "https://thecrashcourse.com/topic/botany/",
-    category: "Science",
+    title: "Greek Mythology",
+    url: "https://www.youtube.com/watch?v=tsHqBQkYcTQ&list=PLY7BFnOZ_ONSGH0Mg0XRwMv9K41eawUvp",
+    category: "Myth",
+    completed: false,
+  },
+  {
+    title: "The Network State (book)",
+    url: "https://thenetworkstate.com/",
+    category: "technology",
     completed: false,
   },
   {
@@ -70,6 +80,62 @@ export const CHECK_LIST: Bookmark[] = [
 
 export const PODCAST_LIST: Podcast[] = [
   {
+    title: "Normalize.fm - グラフィックスプログラミングやウェブ開発",
+    url: "https://podcasts.apple.com/jp/podcast/normalize-fm/id1584103536",
+  },
+  {
+    title: "ひいきびいき - (大好き！) ",
+    url: "https://archive.org/details/hikibiki_podcast",
+  },
+  {
+    title: "True Crime with Kendall Rae",
+    url: "https://open.spotify.com/show/4d6RwH9XKnZ6osfNVc26eJ",
+  },
+  {
+    title: "Better and Better Psychology",
+    url: "https://podcasts.apple.com/us/podcast/better-and-better-psychology/id1508161933",
+  },
+  {
+    title: "Syntax - Tasty Web Development Treats",
+    url: "https://syntax.fm/",
+  },
+  {
+    title: "What You Will Learn - Book Review",
+    url: "https://podcasts.apple.com/us/podcast/what-you-will-learn/id1125635053",
+  },
+  {
+    title: "Live in Tokyo with MaxD. Capo",
+    url: "https://open.spotify.com/show/1XdRNqW9BYi9avrXHiuczq",
+  },
+  {
+    title: "日谈公园（主要听史里芬）",
+    url: "https://open.spotify.com/show/3CzaChYW53HUTR9qcqLl8a",
+  },
+  {
+    title: "黑猫侦探社 - 真实罪案",
+    url: "https://www.xiaoyuzhoufm.com/podcast/60c9efbc21a514053c1e73e5",
+  },
+  {
+    title: "日谈物语 - 真实罪案",
+    url: "https://open.spotify.com/show/2AChsHuRzs53t4CTMhbOib",
+  },
+  {
+    title: "天才捕手FM-最带劲的职业故事",
+    url: "https://www.xiaoyuzhoufm.com/podcast/5e77133b418a84a0469fc305",
+  },
+  {
+    title: "聊这个可以吗？（飞行人生、航班趣事、旅行见闻）",
+    url: "https://www.xiaoyuzhoufm.com/podcast/654b77f7e5684746169f877b",
+  },
+  {
+    title: "What Is It Like To Be a Robot Fish Man? (with Ted Chiang)",
+    url: "https://verybadwizards.com/episode/episode-213-what-is-it-like-to-be-a-robot-fish-man-with-ted-chiang",
+  },
+  {
+    title: "Dream Theater on Eddie Trunk",
+    url: "https://podcasts.apple.com/us/podcast/shavo-odadjian-dream-theater/id897720614?i=1000691711778",
+  },
+  {
     title: "Joe Experience With Naval",
     // url: "https://open.spotify.com/episode/6a6OCbv8Zrk2f2CZMNxhyc?si=d70c6e27cdb14560",
     url: "https://www.youtube.com/watch?v=3qHkcs3kG44",
@@ -78,35 +144,31 @@ export const PODCAST_LIST: Podcast[] = [
     title: "Naval Rivikant On Happiness, reducing Anxiety And love",
     url: "https://open.spotify.com/episode/24bTtgIVEDgrkeFe0rQxiR?si=7r9fxjDJQkmR454EysWSkg",
   },
-  {
-    title: "Naval How to get Rich",
-    url: "https://open.spotify.com/episode/7eMQHZ36LT2fzxFzfdvOFz?si=9xitxu3ZQpib0FrwvlLe_g",
-  },
+  // {
+  //   title: "Naval How to get Rich",
+  //   url: "https://open.spotify.com/episode/7eMQHZ36LT2fzxFzfdvOFz?si=9xitxu3ZQpib0FrwvlLe_g",
+  // },
   {
     title: "Steven Bartlett - The Savings Expert: “Do Not Buy A House!”",
     url: "https://open.spotify.com/episode/6JoRHviqsaRyWhxmASmJ6r?si=GzqmsZ-sQkah5Xv9mDZ1cQ",
   },
   {
-    title: "日本房地产投资入门全攻略",
-    url: "https://www.xiaoyuzhoufm.com/episode/67b8334b606e5c5940eb5bd0",
+    title:
+      "Arthur Brooks : Single Friends Will Keep You Single & Obesity Is Contagious",
+    url: "https://open.spotify.com/episode/3kDs82rWkG5veQqIKmkOBk",
   },
+  // {
+  //   title: "日本房地产投资入门全攻略",
+  //   url: "https://www.xiaoyuzhoufm.com/episode/67b8334b606e5c5940eb5bd0",
+  // },
+  // {
+  //   title: "01 年开发者面包： 湾区的编码日常",
+  //   url: "https://www.xiaoyuzhoufm.com/episode/67be0d63c8fa96b18c96ef3d",
+  // },
   {
-    title: "01 年开发者面包： 湾区的编码日常",
-    url: "https://www.xiaoyuzhoufm.com/episode/67be0d63c8fa96b18c96ef3d",
+    title: "The Divorce Expert : James Sexton",
+    url: "https://www.youtube.com/watch?v=-MGyiqVjdKI",
   },
-
-  // {
-  //   title: "黑猫侦探社",
-  //   url: "",
-  // },
-  // {
-  //   title: "日谈公园",
-  //   url: "",
-  // },
-  // {
-  //   title: "日谈物语",
-  //   url: "https://open.spotify.com/show/2AChsHuRzs53t4CTMhbOib",
-  // },
 ];
 
 export const QIITA_LIST: Podcast[] = [
@@ -134,17 +196,9 @@ export const QIITA_LIST: Podcast[] = [
     title: "Nuxtにおける四つのライフサイクルフックの比較",
     url: "https://qiita.com/Natsuki_R/items/e881252c2c43797dcbb7",
   },
-
-  // {
-  //   title: "黑猫侦探社",
-  //   url: "",
-  // },
-  // {
-  //   title: "日谈公园",
-  //   url: "",
-  // },
-  // {
-  //   title: "日谈物语",
-  //   url: "https://open.spotify.com/show/2AChsHuRzs53t4CTMhbOib",
-  // },
 ];
+
+// {
+//   title: "WebGL 総本山",
+//   url: "https://webgl.souhonzan.org/",
+// },

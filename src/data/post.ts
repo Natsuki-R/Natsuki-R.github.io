@@ -3,6 +3,7 @@ import { Post } from "../types/post";
 const POSTS: Post[] = [
   {
     id: "000000",
+    content: `Then she left me, but the music stayed.`,
     images: [{ id: 0, src: "/img/music_stay.png", alt: "movie" }],
     parsedDate: new Date(2021, 2, 10, 23, 52),
   },
