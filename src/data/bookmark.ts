@@ -95,7 +95,6 @@ export const PODCAST_LIST: Podcast[] = [
     url: "https://www.xiaoyuzhoufm.com/episode/67be0d63c8fa96b18c96ef3d",
   },
 
-
   // {
   //   title: "黑猫侦探社",
   //   url: "",
@@ -108,11 +107,7 @@ export const PODCAST_LIST: Podcast[] = [
   //   title: "日谈物语",
   //   url: "https://open.spotify.com/show/2AChsHuRzs53t4CTMhbOib",
   // },
-
-
-
 ];
-
 
 export const QIITA_LIST: Podcast[] = [
   {
@@ -140,7 +135,6 @@ export const QIITA_LIST: Podcast[] = [
     url: "https://qiita.com/Natsuki_R/items/e881252c2c43797dcbb7",
   },
 
-
   // {
   //   title: "黑猫侦探社",
   //   url: "",
@@ -153,7 +147,4 @@ export const QIITA_LIST: Podcast[] = [
   //   title: "日谈物语",
   //   url: "https://open.spotify.com/show/2AChsHuRzs53t4CTMhbOib",
   // },
-
-
-
 ];

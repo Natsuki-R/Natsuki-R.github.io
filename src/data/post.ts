@@ -113,4 +113,6 @@ const POSTS: Post[] = [
   },
 ];
 
-export const sortedPosts = POSTS.sort((a, b) => b.parsedDate.getTime() - a.parsedDate.getTime()); // Sort by date, newest first
+export const sortedPosts = POSTS.sort(
+  (a, b) => b.parsedDate.getTime() - a.parsedDate.getTime()
+); // Sort by date, newest first

@@ -7,7 +7,8 @@ import { project } from "../types/project";
 export const PROJECTS: project[] = [
   {
     title: "Digital-Archive",
-    description: "paintings, C4D models, diy... all those stupid sh*t that I made before :)",
+    description:
+      "paintings, C4D models, diy... all those stupid sh*t that I made before :)",
     url: "https://digital-archive-natsuki.vercel.app/",
     imageUrl: project4,
   },
@@ -26,7 +27,8 @@ export const PROJECTS: project[] = [
   },
   {
     title: "3D Cemetery",
-    description: "You can design your own cemetery funeral experience with 3D models.",
+    description:
+      "You can design your own cemetery funeral experience with 3D models.",
     url: "https://3d-cemetery.vercel.app/",
     imageUrl: project3,
   },
