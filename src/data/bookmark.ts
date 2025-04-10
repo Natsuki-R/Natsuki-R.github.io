@@ -2,6 +2,15 @@ import { Bookmark, Podcast } from "../types/bookmark";
 
 export const BOOKMARKS: Bookmark[] = [
   {
+    title:
+      "How to American: An Immigrant's Guide to Disappointing Your Parents: Jimmy O. Yang",
+    url: "https://www.overdrive.com/media/3716390/how-to-american",
+  },
+  {
+    title: "Born A Crime: Trevor Noah",
+    url: "https://loveaudiobook.com/born-a-crime-audiobook-19093-004/",
+  },
+  {
     title: "Deep Dive into LLMs like ChatGPT",
     url: "https://youtu.be/7xTGNNLPyMI?si=ESaocRE00_26BtKd",
     // description:

@@ -2183,8 +2183,36 @@ const INSOMNIUM: Artist = {
       isListened: true,
       ranking: 9,
     },
+    {
+      id: 1,
+      name: "Heart Like A Grave",
+      releasedYear: 2019,
+      isListened: true,
+      ranking: 8,
+    },
   ],
 };
+
+// const POLYPHIA: Artist = {
+//   name: "Polyphia",
+//   genre: "prog-metal",
+//   albums: [
+//     {
+//       id: 0,
+//       name: "Shadows of the Dying Sun",
+//       releasedYear: 2014,
+//       isListened: true,
+//       ranking: 9,
+//     },
+//     {
+//       id: 1,
+//       name: "Heart Like A Grave",
+//       releasedYear: 2019,
+//       isListened: true,
+//       ranking: 8,
+//     },
+//   ],
+// };
 
 const SLIPKNOT: Artist = {
   name: "Slipknot",
@@ -2420,6 +2448,22 @@ const METAL_PLAYLIST: Artist = {
       isListened: false,
       ranking: 1,
     },
+    {
+      id: 10,
+      artistName: "Aerosmith",
+      name: "Rocks",
+      releasedYear: 1976,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 11,
+      artistName: "Mötley Crüe",
+      name: "Shout at the Devil",
+      releasedYear: 1983,
+      isListened: true,
+      ranking: 8,
+    },
     // {
     //     id: 6,
     //     artistName: "Maximum the Hormone",
@@ -2465,6 +2509,7 @@ export const ARTISTS: Artist[] = [
   INSOMNIUM,
   DARK_TRANQUILLITY,
   LED_ZEPPELIN,
+  // POLYPHIA,
   RAGE_AGAINST_THE_MACHINE,
   GOD_IS_AN_ASTRONAUT,
   SUEDE,
