@@ -105,8 +105,8 @@ const MATH_ROCK_PLAYLIST: Artist = {
       artistName: "Colour",
       name: "Anthology",
       releasedYear: 2012,
-      isListened: false,
-      ranking: 1,
+      isListened: true,
+      ranking: 8,
     },
     {
       id: 13,
@@ -736,7 +736,7 @@ const GnR: Artist = {
       name: "Use Your Illusion I",
       releasedYear: 1991,
       isListened: true,
-      ranking: 8,
+      ranking: 9,
     },
     {
       id: 2,
@@ -1257,41 +1257,6 @@ const RADIOHEAD: Artist = {
     },
   ],
 };
-
-// const SIGUR_ROS: Artist = {
-//   name: "Sigur Rós",
-//   genre: "Icelandic-post-rock",
-//   albums: [
-//     {
-//       id: 0,
-//       name: "( )",
-//       releasedYear: 2002,
-//       isListened: true,
-//       ranking: 7,
-//     },
-//     {
-//       id: 1,
-//       name: "ATTA",
-//       releasedYear: 2023,
-//       isListened: true,
-//       ranking: 7,
-//     },
-//     {
-//       id: 2,
-//       name: "Valtari",
-//       releasedYear: 2012,
-//       isListened: true,
-//       ranking: 7,
-//     },
-//     {
-//       id: 3,
-//       name: "Takk...",
-//       releasedYear: 2005,
-//       isListened: true,
-//       ranking: 7,
-//     },
-//   ],
-// };
 
 const MONO: Artist = {
   name: "Mono",
@@ -2190,29 +2155,168 @@ const INSOMNIUM: Artist = {
       isListened: true,
       ranking: 8,
     },
+    {
+      id: 2,
+      name: "Anno 1696",
+      releasedYear: 2023,
+      isListened: true,
+      ranking: 9,
+    },
+    {
+      id: 3,
+      name: "Accross The Dark",
+      releasedYear: 2009,
+      isListened: false,
+      ranking: 9,
+    },
+    {
+      id: 4,
+      name: "Above the Weeping World",
+      releasedYear: 2006,
+      isListened: false,
+      ranking: 8,
+    },
+    {
+      id: 5,
+      name: "One for Sorrow",
+      releasedYear: 2011,
+      isListened: false,
+      ranking: 9,
+    },
+    {
+      id: 6,
+      name: "Winter's Gate",
+      releasedYear: 2016,
+      isListened: false,
+      ranking: 9,
+    },
+    {
+      id: 7,
+      name: "In the Halls of Awaiting",
+      releasedYear: 2002,
+      isListened: true,
+      ranking: 7,
+    },
+    {
+      id: 8,
+      name: "Since the Day it All Came Down",
+      releasedYear: 2004,
+      isListened: false,
+      ranking: 7,
+    },
   ],
 };
 
-// const POLYPHIA: Artist = {
-//   name: "Polyphia",
-//   genre: "prog-metal",
-//   albums: [
-//     {
-//       id: 0,
-//       name: "Shadows of the Dying Sun",
-//       releasedYear: 2014,
-//       isListened: true,
-//       ranking: 9,
-//     },
-//     {
-//       id: 1,
-//       name: "Heart Like A Grave",
-//       releasedYear: 2019,
-//       isListened: true,
-//       ranking: 8,
-//     },
-//   ],
-// };
+const PROG_METAL: Artist = {
+  name: "Progressive metal",
+  genre: "prog-metal",
+  albums: [
+    {
+      id: 0,
+      artistName: "Polyphia",
+      name: "Renaissance",
+      releasedYear: 2016,
+      isListened: true,
+      ranking: 9,
+    },
+    {
+      id: 1,
+      artistName: "Polyphia",
+      name: "Muse",
+      releasedYear: 2014,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 2,
+      artistName: "Polyphia",
+      name: "Remember That You Will Die",
+      releasedYear: 2022,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 3,
+      artistName: "Vinnie Moore",
+      name: "The Maze",
+      releasedYear: 1999,
+      isListened: true,
+      ranking: 9,
+    },
+    {
+      id: 4,
+      artistName: "Vinnie Moore",
+      name: "Mind's Eye",
+      releasedYear: 2016,
+      isListened: false,
+      ranking: 1,
+    },
+    {
+      id: 5,
+      artistName: "Covet",
+      name: "Catharsis",
+      releasedYear: 2023,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 6,
+      artistName: "Covet",
+      name: "Technicolor",
+      releasedYear: 2020,
+      isListened: false,
+      ranking: 1,
+    },
+    {
+      id: 7,
+      artistName: "Covet",
+      name: "Effloresce",
+      releasedYear: 2018,
+      isListened: false,
+      ranking: 1,
+    },
+    {
+      id: 8,
+      artistName: "Plini",
+      name: "Handmade Cities",
+      releasedYear: 2016,
+      isListened: false,
+      ranking: 1,
+    },
+    {
+      id: 8,
+      artistName: "Nick Johnston",
+      name: "Child of Bliss",
+      releasedYear: 2024,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 8,
+      artistName: "Liquid Tension Experiment",
+      name: "LTE",
+      releasedYear: 1998,
+      isListened: true,
+      ranking: 9,
+    },
+    {
+      id: 8,
+      artistName: "Liquid Tension Experiment",
+      name: "LTE 2",
+      releasedYear: 1998,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 8,
+      artistName: "Liquid Tension Experiment",
+      name: "LTE 3",
+      releasedYear: 2021,
+      isListened: true,
+      ranking: 10,
+    },
+  ],
+};
 
 const SLIPKNOT: Artist = {
   name: "Slipknot",
@@ -2345,6 +2449,14 @@ const INDIE_PLAYLIST: Artist = {
       isListened: true,
       ranking: 9,
     },
+    {
+      id: 3,
+      artistName: "Nine Inch Nails",
+      name: "The Downward Spiral",
+      releasedYear: 1994,
+      isListened: true,
+      ranking: 10,
+    },
   ],
 };
 
@@ -2464,14 +2576,61 @@ const METAL_PLAYLIST: Artist = {
       isListened: true,
       ranking: 8,
     },
-    // {
-    //     id: 6,
-    //     artistName: "Maximum the Hormone",
-    //     name: "",
-    //     releasedYear: 1000,
-    //     isListened: false,
-    //     ranking: 1
-    // },
+    {
+      id: 6,
+      artistName: "Opeth",
+      name: "Damnation",
+      releasedYear: 2003,
+      isListened: true,
+      ranking: 8,
+    },
+  ],
+};
+
+const ROCK_PLAYLIST: Artist = {
+  name: "Rock Playlist",
+  genre: "rock",
+  albums: [
+    {
+      id: 0,
+      artistName: "Muse",
+      name: "Absolution",
+      releasedYear: 2003,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 1,
+      artistName: "Pink Floyd",
+      name: "Animals",
+      releasedYear: 1977,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 2,
+      artistName: "Pink Floyd",
+      name: "The Dark Side of the Moon",
+      releasedYear: 1973,
+      isListened: true,
+      ranking: 9,
+    },
+    {
+      id: 3,
+      artistName: "Pink Floyd",
+      name: "Wish You Were Here",
+      releasedYear: 1975,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 4,
+      artistName: "Pink Floyd",
+      name: "The Wall",
+      releasedYear: 1979,
+      isListened: true,
+      ranking: 9,
+    },
   ],
 };
 
@@ -2495,12 +2654,46 @@ const POST_ROCK_PLAYLIST: Artist = {
       isListened: true,
       ranking: 8,
     },
+    {
+      id: 0,
+      artistName: "Sigur Rós",
+      name: "( )",
+      releasedYear: 2002,
+      isListened: true,
+      ranking: 7,
+    },
+    {
+      id: 1,
+      artistName: "Sigur Rós",
+      name: "ATTA",
+      releasedYear: 2023,
+      isListened: true,
+      ranking: 7,
+    },
+    {
+      id: 2,
+      artistName: "Sigur Rós",
+      name: "Valtari",
+      releasedYear: 2012,
+      isListened: true,
+      ranking: 7,
+    },
+    {
+      id: 3,
+      artistName: "Sigur Rós",
+      name: "Takk...",
+      releasedYear: 2005,
+      isListened: true,
+      ranking: 7,
+    },
   ],
 };
 
 export const ARTISTS: Artist[] = [
   MATH_ROCK_PLAYLIST,
   POST_ROCK_PLAYLIST,
+  PROG_METAL,
+  ROCK_PLAYLIST,
   METAL_PLAYLIST,
   INDIE_PLAYLIST,
   PANTERA,
@@ -2509,7 +2702,6 @@ export const ARTISTS: Artist[] = [
   INSOMNIUM,
   DARK_TRANQUILLITY,
   LED_ZEPPELIN,
-  // POLYPHIA,
   RAGE_AGAINST_THE_MACHINE,
   GOD_IS_AN_ASTRONAUT,
   SUEDE,
@@ -2528,5 +2720,4 @@ export const ARTISTS: Artist[] = [
   // THOM_YORKE,
   RADIOHEAD,
   IRON_MAIDEN,
-  // SIGUR_ROS,
 ];
