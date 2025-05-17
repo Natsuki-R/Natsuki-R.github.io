@@ -4,6 +4,41 @@ footer {
   padding: 2rem 0;
   margin-top: 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.btn-scrollup {
+  position: fixed;
+  right: 2rem;
+  bottom: -20%;
+  background-color: #f0f0f0;
+  opacity: 0.8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3px;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.btn-scrollup:hover {
+  transform: translateY(-3px);
+  opacity: 1;
+  background-color: #e0e0e0;
+}
+
+.btn-scrollup img {
+  width: 30px;
+  height: 30px;
+}
+
+.show-scroll {
+  bottom: 3rem;
 }
 
 .social-links {
