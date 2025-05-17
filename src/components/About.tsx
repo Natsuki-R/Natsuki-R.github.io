@@ -8,11 +8,13 @@ const About: React.FC = () => {
       <div className="about-content">
         <div className="about-text">
           <h2>About Me</h2>
-          <p>someone who often spends 2 hours daydreaming under the sun.</p>
+          {/* <p>someone who often spends 2 hours daydreaming under the sun.</p> */}
           <p>
-            live for aha moments — Naval Ravikant
+            live for aha moments
+            {/*  — Naval Ravikant */}
             <br />
-            connecting the dots — Steve Jobs
+            connecting the dots
+            {/* — Steve Jobs */}
           </p>
         </div>
         <div className="about-image">
