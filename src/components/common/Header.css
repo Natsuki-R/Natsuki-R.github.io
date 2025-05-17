@@ -16,7 +16,7 @@
 }
 
 .header .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #96d6c3aa);
 }
 
 .header .nav {
@@ -32,10 +32,16 @@
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
-.header .nav a:hover {
-    color: #ddd;
+/* Active link styling */
+.header .nav a.active {
+    color: #96d6c3;
+}
+
+.header .nav a:hover:not(.active) {
+    color: #96d6c3;
 }
 
 /* Hamburger menu toggle button - hidden on desktop */
@@ -130,5 +136,10 @@
         display: block;
         font-size: 1.2rem;
         padding: 0.5rem 0;
+    }
+
+    /* Mobile active link styles */
+    .header .nav a.active {
+        color: #96d6c3;
     }
 }

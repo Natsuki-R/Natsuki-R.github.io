@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import avatar from "../../assets/avatar.png";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const scrollY = useRef(0);
+  const location = useLocation();
 
   // Toggle menu state with a more robust approach
   const toggleMenu = () => {
@@ -62,6 +63,11 @@ const Header: React.FC = () => {
     };
   }, [isMenuOpen]);
 
+  // Helper function: check if a path is active
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
+
   return (
     <header className="header">
       <div>
@@ -82,32 +88,56 @@ const Header: React.FC = () => {
 
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <div>
-          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="/"
+            onClick={() => setIsMenuOpen(false)}
+            className={isActive("/") ? "active" : ""}
+          >
             Home
           </Link>
         </div>
         <div>
-          <Link to="/about" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="/about"
+            onClick={() => setIsMenuOpen(false)}
+            className={isActive("/about") ? "active" : ""}
+          >
             About
           </Link>
         </div>
         <div>
-          <Link to="/bookmark" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="/bookmark"
+            onClick={() => setIsMenuOpen(false)}
+            className={isActive("/bookmark") ? "active" : ""}
+          >
             Bookmark
           </Link>
         </div>
         <div>
-          <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="/blog"
+            onClick={() => setIsMenuOpen(false)}
+            className={isActive("/blog") ? "active" : ""}
+          >
             Blog
           </Link>
         </div>
         <div>
-          <Link to="/music" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="/music"
+            onClick={() => setIsMenuOpen(false)}
+            className={isActive("/music") ? "active" : ""}
+          >
             Music
           </Link>
         </div>
         <div>
-          <Link to="/projects" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            to="/projects"
+            onClick={() => setIsMenuOpen(false)}
+            className={isActive("/projects") ? "active" : ""}
+          >
             Project
           </Link>
         </div>
