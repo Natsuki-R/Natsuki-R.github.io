@@ -1419,6 +1419,125 @@ const SUEDE: Artist = {
   ],
 };
 
+const LAMB_OF_GOD: Artist = {
+  name: "Lamb of God",
+  genre: "heavy-metal",
+  albums: [
+    {
+      id: 0,
+      name: "New American Gospel",
+      releasedYear: 2000,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 1,
+      name: "As the Palaces Burn",
+      releasedYear: 2003,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 2,
+      name: "Ashes of the Wake",
+      releasedYear: 2004,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 3,
+      name: "Sacrament",
+      releasedYear: 2006,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 4,
+      name: "Wrath",
+      releasedYear: 2009,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 5,
+      name: "Resolution",
+      releasedYear: 2012,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 6,
+      name: "VII: Sturm und Drang",
+      releasedYear: 2015,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 7,
+      name: "Lamb of God",
+      releasedYear: 2020,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 8,
+      name: "Omens",
+      releasedYear: 2022,
+      isListened: false,
+      ranking: 1
+    }
+  ]
+};
+
+const ALICE_IN_CHAINS: Artist = {
+  name: "Alice in Chains",
+  genre: "metal rock grunge",
+  albums: [
+    {
+      id: 0,
+      name: "Facelift",
+      releasedYear: 1990,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 1,
+      name: "Dirt",
+      releasedYear: 1992,
+      isListened: true,
+      ranking: 9
+    },
+    {
+      id: 2,
+      name: "Alice in Chains",
+      releasedYear: 1995,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 3,
+      name: "Black Gives Way to Blue",
+      releasedYear: 2009,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 4,
+      name: "The Devil Put Dinosaurs Here",
+      releasedYear: 2013,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 5,
+      name: "Rainier Fog",
+      releasedYear: 2018,
+      isListened: false,
+      ranking: 1
+    }
+  ]
+};
+
 const RAGE_AGAINST_THE_MACHINE: Artist = {
   name: "Rage Against the Machine",
   genre: "rock",
@@ -1434,24 +1553,136 @@ const RAGE_AGAINST_THE_MACHINE: Artist = {
       id: 1,
       name: "Evil Empire",
       releasedYear: 1996,
-      isListened: false,
-      ranking: 1,
+      isListened: true,
+      ranking: 8,
     },
     {
       id: 2,
       name: "The Battle of Los Angeles",
       releasedYear: 1999,
-      isListened: false,
-      ranking: 1,
+      isListened: true,
+      ranking: 8,
     },
     {
       id: 3,
       name: "Renegades",
       releasedYear: 2000,
-      isListened: false,
-      ranking: 1,
+      isListened: true,
+      ranking: 8,
     },
   ],
+};
+
+const PINK_FLOYD: Artist = {
+  name: "Pink Floyd",
+  genre: "experimental-rock",
+  albums: [
+    {
+      id: 0,
+      name: "The Piper at the Gates of Dawn",
+      releasedYear: 1967,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 1,
+      name: "A Saucerful of Secrets",
+      releasedYear: 1968,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 2,
+      name: "More",
+      releasedYear: 1969,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 3,
+      name: "Ummagumma",
+      releasedYear: 1969,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 4,
+      name: "Atom Heart Mother",
+      releasedYear: 1970,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 5,
+      name: "Meddle",
+      releasedYear: 1971,
+      isListened: true,
+      ranking: 8
+    },
+    {
+      id: 6,
+      name: "Obscured by Clouds",
+      releasedYear: 1972,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 7,
+      name: "The Dark Side of the Moon",
+      releasedYear: 1973,
+      isListened: true,
+      ranking: 9
+    },
+    {
+      id: 8,
+      name: "Wish You Were Here",
+      releasedYear: 1975,
+      isListened: true,
+      ranking: 9
+    },
+    {
+      id: 9,
+      name: "Animals",
+      releasedYear: 1977,
+      isListened: true,
+      ranking: 9
+    },
+    {
+      id: 10,
+      name: "The Wall",
+      releasedYear: 1979,
+      isListened: true,
+      ranking: 10
+    },
+    {
+      id: 11,
+      name: "The Final Cut",
+      releasedYear: 1983,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 12,
+      name: "A Momentary Lapse of Reason",
+      releasedYear: 1987,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 13,
+      name: "The Division Bell",
+      releasedYear: 1994,
+      isListened: true,
+      ranking: 9
+    },
+    {
+      id: 14,
+      name: "The Endless River",
+      releasedYear: 2014,
+      isListened: false,
+      ranking: 1
+    }
+  ]
 };
 
 const IRON_MAIDEN: Artist = {
@@ -2584,6 +2815,22 @@ const METAL_PLAYLIST: Artist = {
       isListened: true,
       ranking: 8,
     },
+    {
+      id: 0,
+      artistName: "Archspire",
+      name: "Relentless Mutation",
+      releasedYear: 2017,
+      isListened: true,
+      ranking: 8,
+    },
+    {
+      id: 0,
+      artistName: "Archspire",
+      name: "Bleed the Future",
+      releasedYear: 2021,
+      isListened: false,
+      ranking: 8,
+    },
   ],
 };
 
@@ -2598,38 +2845,6 @@ const ROCK_PLAYLIST: Artist = {
       releasedYear: 2003,
       isListened: true,
       ranking: 8,
-    },
-    {
-      id: 1,
-      artistName: "Pink Floyd",
-      name: "Animals",
-      releasedYear: 1977,
-      isListened: true,
-      ranking: 8,
-    },
-    {
-      id: 2,
-      artistName: "Pink Floyd",
-      name: "The Dark Side of the Moon",
-      releasedYear: 1973,
-      isListened: true,
-      ranking: 9,
-    },
-    {
-      id: 3,
-      artistName: "Pink Floyd",
-      name: "Wish You Were Here",
-      releasedYear: 1975,
-      isListened: true,
-      ranking: 8,
-    },
-    {
-      id: 4,
-      artistName: "Pink Floyd",
-      name: "The Wall",
-      releasedYear: 1979,
-      isListened: true,
-      ranking: 9,
     },
   ],
 };
@@ -2689,6 +2904,97 @@ const POST_ROCK_PLAYLIST: Artist = {
   ],
 };
 
+const MARILYN_MANSON: Artist = {
+  name: "Marilyn Manson",
+  genre: "rock",
+  albums: [
+    {
+      id: 0,
+      name: "Portrait of an American Family",
+      releasedYear: 1994,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 1,
+      name: "Antichrist Superstar",
+      releasedYear: 1996,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 2,
+      name: "Mechanical Animals",
+      releasedYear: 1998,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 3,
+      name: "Holy Wood",
+      releasedYear: 2000,
+      isListened: true,
+      ranking: 8
+    },
+    {
+      id: 4,
+      name: "The Golden Age of Grotesque",
+      releasedYear: 2003,
+      isListened: true,
+      ranking: 8
+    },
+    {
+      id: 5,
+      name: "Eat Me, Drink Me",
+      releasedYear: 2007,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 6,
+      name: "The High End of Low",
+      releasedYear: 2009,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 7,
+      name: "Born Villain",
+      releasedYear: 2012,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 8,
+      name: "The Pale Emperor",
+      releasedYear: 2015,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 9,
+      name: "Heaven Upside Down",
+      releasedYear: 2017,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 10,
+      name: "WE ARE CHAOS",
+      releasedYear: 2020,
+      isListened: false,
+      ranking: 1
+    },
+    {
+      id: 11,
+      name: "One Assassination Under God – Chapter 1",
+      releasedYear: 2024,
+      isListened: false,
+      ranking: 1
+    }
+  ]
+};
+
 export const ARTISTS: Artist[] = [
   MATH_ROCK_PLAYLIST,
   POST_ROCK_PLAYLIST,
@@ -2696,20 +3002,26 @@ export const ARTISTS: Artist[] = [
   ROCK_PLAYLIST,
   METAL_PLAYLIST,
   INDIE_PLAYLIST,
+  ALICE_IN_CHAINS,
+  MARILYN_MANSON,
+  LAMB_OF_GOD,
   PANTERA,
   STONE_SOUR,
   SLIPKNOT,
-  INSOMNIUM,
+  PINK_FLOYD,
   DARK_TRANQUILLITY,
   LED_ZEPPELIN,
-  RAGE_AGAINST_THE_MACHINE,
   GOD_IS_AN_ASTRONAUT,
-  SUEDE,
-  TOE,
   PLACEBO,
   LEONARD_COHEN,
   DAVID_BOWIE,
   JUDAS_PRIEST,
+  SUEDE,
+
+  // FINISHED
+  INSOMNIUM,
+  TOE,
+  RAGE_AGAINST_THE_MACHINE,
   DREAM_THEATER,
   GnR,
   DEATH,
