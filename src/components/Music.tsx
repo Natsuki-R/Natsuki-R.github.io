@@ -32,7 +32,7 @@ const ArtistCard: React.FC<{ artist: (typeof ARTISTS)[0] }> = ({ artist }) => {
     <div className="artist-card">
       {/* Toggle button for accordion */}
       <div className="artist-name" onClick={() => setIsOpen(!isOpen)}>
-        {artist.name} {isOpen ? "▲" : "▼"}
+        {artist.name} <span className={`arrow ${isOpen ? "open" : ""}`}>▼</span>
       </div>
 
       {isOpen && (
@@ -69,9 +69,8 @@ const ArtistCard: React.FC<{ artist: (typeof ARTISTS)[0] }> = ({ artist }) => {
             {FILTERS.map((filter) => (
               <button
                 key={filter}
-                className={`filter-button ${
-                  selectedFilter === filter ? "active" : ""
-                }`}
+                className={`filter-button ${selectedFilter === filter ? "active" : ""
+                  }`}
                 onClick={() => setSelectedFilter(filter)}
               >
                 {filter}

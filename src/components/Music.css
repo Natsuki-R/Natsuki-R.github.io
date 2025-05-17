@@ -38,6 +38,15 @@
     cursor: pointer;
 }
 
+.artist-name .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.artist-name .arrow.open {
+    transform: rotate(180deg);
+}
+
 .artist-genre {
     padding-bottom: 12px;
     font-size: 1.1vw;
