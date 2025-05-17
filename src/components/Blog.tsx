@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import "./Blog.css";
 import { sortedPosts as POSTS } from "../data/post";
 
-const POSTS_PER_PAGE = 4;
+const POSTS_PER_PAGE = 7;
 
 // Formatter instances for reuse
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
@@ -58,6 +58,96 @@ const Blog: React.FC = () => {
     return `${formattedDate} at ${formattedTime}`;
   };
 
+  // Parse markdown-like formatting in post content
+  const parseContent = (content?: string): React.ReactNode => {
+    if (!content) return null;
+
+    // Split by <br> 
+    let parts = content.split("<br>");
+
+    return parts.map((part, lineIdx) => {
+      const elements: React.ReactNode[] = [];
+      let remainingText = part;
+
+      // Process text for markdown-like formatting
+      const processText = (text: string): React.ReactNode => {
+        text = text.replace(/\*\*\*([^*]+)\*\*\*/g, '<span style="font-weight: bold; font-style: italic;">$1</span>');
+        text = text.replace(/\*\*([^*]+)\*\*/g, '<span style="font-weight: bold;">$1</span>');
+        text = text.replace(/\*([^*]+)\*/g, '<span style="font-style: italic;">$1</span>');
+        // Return as dangerouslySetInnerHTML to render the HTML tags
+        return <span dangerouslySetInnerHTML={{ __html: text }} />;
+      };
+
+      // handle URLs with multiple parentheses 
+      let textSoFar = '';
+      let inLink = false;
+      let linkText = '';
+      let linkUrl = '';
+      let openParens = 0;
+
+      for (let i = 0; i < remainingText.length; i++) {
+        const char = remainingText[i];
+        const nextChar = i < remainingText.length - 1 ? remainingText[i + 1] : '';
+
+        if (!inLink && char === '[') {
+          // Start of link text
+          if (textSoFar) {
+            elements.push(processText(textSoFar));
+            textSoFar = '';
+          }
+          inLink = true;
+          linkText = '';
+        } else if (inLink && char === ']' && nextChar === '(') {
+          // End of link text, start of URL
+          linkUrl = '';
+          i++; // Skip the '('
+          openParens = 1;
+        } else if (inLink && openParens > 0) {
+          if (char === '(') {
+            openParens++;
+            linkUrl += char;
+          } else if (char === ')') {
+            openParens--;
+            if (openParens === 0) {
+              // End of URL, add link element
+              elements.push(
+                <a
+                  key={`${lineIdx}-link-${elements.length}`}
+                  href={linkUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {linkText}
+                </a>
+              );
+              inLink = false;
+            } else {
+              linkUrl += char;
+            }
+          } else {
+            linkUrl += char;
+          }
+        } else if (inLink && openParens === 0 && char !== ']') {
+          linkText += char;
+        } else if (!inLink) {
+          textSoFar += char;
+        }
+      }
+
+      // Add any remaining text
+      if (textSoFar) {
+        elements.push(processText(textSoFar));
+      }
+
+      return (
+        <React.Fragment key={lineIdx}>
+          {elements.length > 0 ? elements : processText(part)}
+          {lineIdx < parts.length - 1 && <br />}
+        </React.Fragment>
+      );
+    });
+  };
+
   // Navigate to different pages
   const handlePageChange = (page: number) => {
     if (page < 1 || page > totalPages) return;
@@ -100,6 +190,9 @@ const Blog: React.FC = () => {
           <div className="posts-list">
             {paginatedPosts.map((post, index) => (
               <article key={index} className="post">
+                {post.header && (
+                  <h2 className="post-header">{post.header}</h2>
+                )}
                 <time
                   className="timestamp"
                   dateTime={post.parsedDate.toISOString()}
@@ -107,12 +200,7 @@ const Blog: React.FC = () => {
                   {formatDate(post.parsedDate)}
                 </time>
                 <div className="post-content">
-                  {post.content?.split("/n").map((line, idx) => (
-                    <React.Fragment key={idx}>
-                      {line}
-                      <br />
-                    </React.Fragment>
-                  ))}
+                  {parseContent(post.content)}
                   {post.links && post.links.length > 0 && (
                     <div className="post-links">
                       {post.links.map((link, linkIndex) => (
