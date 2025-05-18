@@ -101,6 +101,7 @@
 
 .post-images img {
     max-width: 70%;
+    max-height: 360px;
     border-radius: 5px;
     transition: transform 0.3s;
 }

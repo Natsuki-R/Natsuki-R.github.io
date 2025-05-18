@@ -13,7 +13,7 @@ const POSTS: Post[] = [
   {
     id: "0",
     content: `Then she left me, but the music stayed.`,
-    images: [{ id: 0, src: "/img/music_stay.png", alt: "movie" }],
+    images: [{ id: 0, src: "/posts/music-stay.png", alt: "movie" }],
     parsedDate: new Date(2021, 2, 10, 23, 52),
   },
   {
@@ -72,10 +72,10 @@ const POSTS: Post[] = [
   },
   {
     id: "0",
-    content: `“Despite knowing the journey and where it leads, I embrace it. And I welcome every moment of it.”<br>
-    After all those years, this is still my favorite line from *Arrival (2016)*, ever.<br>
-    And I find the following phrase, from the original novel *Story of Your Life* written by Ted Chiang, beautiful too:<br>
-    “My consciousness becomes a half-century-long ember burning outside time.”<br>
+    content: `“**Despite knowing the journey and where it leads, I embrace it. And I welcome every moment of it.**” 
+    After all those years, this is still my favorite line from [Arrival (2016)](https://www.imdb.com/title/tt2543164/), ever.
+    And I find the following phrase, from the original novel [Story of Your Life](https://raley.english.ucsb.edu/wp-content/uploads/Reading/Chiang-story.pdf) written by Ted Chiang, beautiful too:
+    *My consciousness becomes a half-century-long ember burning outside time.*
     Resonates with me.`,
     parsedDate: new Date(2024, 1, 20, 22, 48),
   },
@@ -93,8 +93,7 @@ const POSTS: Post[] = [
   {
     id: "0",
     content:
-      "reading this book right now. Leaving plausibility aside, it’s packed with a crazy amount of concepts I’ve never heard before. Very interesting.",
-    links: ["https://thenetworkstate.com/"],
+      "reading [this book](https://thenetworkstate.com/) right now. Leaving plausibility aside, it’s packed with a crazy amount of concepts I’ve never heard before. Very interesting.",
     parsedDate: new Date(2025, 1, 10, 16, 38),
   },
   {
@@ -119,7 +118,7 @@ const POSTS: Post[] = [
   },
   {
     id: "0",
-    content: `Music is the only true time machine.<br>Music is often associated with times and places and people. It's interesting how people can connect through music, like we are also sharing those memories, even experiencing something from someone's life.`,
+    content: `Music is the only true time machine.<br>It often associates with times and places and people. It's interesting how people can connect through music, like we are also sharing those memories, even experiencing something from someone's life.`,
     parsedDate: new Date(2025, 3, 13, 7, 3),
   },
   {
@@ -142,7 +141,7 @@ const POSTS: Post[] = [
   {
     id: "0",
     header: "Movie: Possession(1981)",
-    content: `For the [movie](https://www.imdb.com/title/tt0082933/), a German cult classic(Sam Neill is a NZ actor). It's raw, chaotic, unsettling and dives deep into emotional and physical extremes. 
+    content: `This [movie](https://www.imdb.com/title/tt0082933/) is a German cult classic (Sam Neill is a NZ actor). It's raw, chaotic, unsettling and dives deep into emotional and physical extremes. 
     But the notorious nasty scene might not for everyone. It reminds me of [Antichrist](https://www.imdb.com/title/tt0870984), and a bit of [Lost Highway](https://www.imdb.com/title/tt0116922/).<br><br>
     What impressed me most was the hysterical performance by the [Isabelle Adjani](https://www.imdb.com/name/nm0000254/bio/), especially she getting very sexy with an octopus-like [Cthulhu creature](https://villains.fandom.com/wiki/Monster_(Possession)). 
     Maybe director was inspired by [Hokusai](https://en.wikipedia.org/wiki/Hokusai)'s famous painting [The Dream of the Fisherman's Wife](https://en.wikipedia.org/wiki/The_Dream_of_the_Fisherman%27s_Wife)?<br><br>
@@ -189,6 +188,131 @@ const POSTS: Post[] = [
     <br><br>"Plagiarism or influence? Perhaps it is a fine line between the two. And Led Zep copied/stole from lots of people so I don't mind so much if someone steals from them. I'm Broken is a great track and it sounds quite different to The Ocean so I think its a valid and original artistic expression."`,
     parsedDate: new Date(2025, 2, 23, 20, 34),
   },
+  {
+    id: "0",
+    content: `[There Will Be Blood (2007)](https://www.imdb.com/title/tt0469494/) was not as good as I expected, but I enjoyed the final scene. 
+    <br>*Capitalism and capital* & *Religion and faith*. 
+    <br> - Faith said to capital that they were best friends.<br> - Capital killed faith.<br> - Capital became the true Third Revelation(or it always is?).`,
+    parsedDate: new Date(2025, 4, 18, 12, 29),
+  },
+  {
+    id: "0",
+    content: `Nothing serious here. You see the timestamp? I can even build my own time machine :)`,
+    parsedDate: new Date(2025, 11, 31, 0, 0),
+  },
+  {
+    id: "0",
+    content: `If I think of Disco Elysium as a game, I can never truly enjoy it. But if I treat it as a visual novel, everything flows so smoothly.`,
+    parsedDate: new Date(2025, 2, 9, 11, 20),
+  },
+  {
+    id: "0",
+    content: `The future book will be like git repository.`,
+    parsedDate: new Date(2025, 1, 2, 14, 40),
+  },
+  {
+    id: "0",
+    content: `看完《孽子》再来漫步台北，所有街道、店铺、人和事都变得不一样了。没有文化的城市是空洞的。`,
+    parsedDate: new Date(2025, 0, 5, 20, 48),
+  },
+  {
+    id: "0",
+    content: `Taking a train in Tokyo or drinking green tea? Hope your math skills are sharper than your taste buds :)`,
+    images: [{ id: 0, src: "/posts/math-quiz-on-train.jpg", alt: "" }],
+    parsedDate: new Date(2024, 5, 7, 8, 40),
+  },
+  {
+    id: "0",
+    content: `Petals are burying this feathered ghost,<br>ants are helping its return to dust`,
+    images: [{ id: 0, src: "/posts/bird-corpse.jpg", alt: "" }],
+    parsedDate: new Date(2025, 3, 19, 13, 50),
+  },
+  {
+    id: "0",
+    content: `[Thom Yorke 'Everything' Tour](https://www.youtube.com/watch?v=G8kEtdk5lJA) has one of the best concert stage designs that I’ve ever seen, really amazing visual effects.`,
+    parsedDate: new Date(2024, 10, 24, 12, 6),
+  },
+  {
+    id: "0",
+    content: `So far in my life, there’s no problem that can’t be solved by reading and exercising. And if it can’t, just read more`,
+    parsedDate: new Date(2025, 0, 26, 22, 21),
+  },
+  {
+    id: "0",
+    content: `皇居河边散步，朋友问我为什么转码。之前也被很多人问过，但第一次我这样答道：
+    **前二十年的人生一直被感性支配，厌倦了为爱、为一些无形的概念而疯狂后，我想，或许做一些此前从不擅长的理性的东西，能抑制自己感性的无止境膨胀。**我知道这答案本身也很感性，但也最像我自己。两年多过去，我代码依然写得很烂，也清楚自己不像优秀的coder那般热爱代码，十年后是否还在这个行业，也无法预见。
+    但从未后悔过尝试，这是我的好奇心，是每天早晨我睁开双眼的动力。<br>我逐渐学会欣赏自己感性的部分，它很柔软，我也因此而独一无二。`,
+    parsedDate: new Date(2025, 0, 26, 23, 13),
+  },
+  {
+    id: "0",
+    content: `听了几期納瓦尔等人的[播客](https://t.co/eG9GPfUw1W)，一些想法。
+    <br>技术的确在把世界推向去中心化，数字游民越来越多，社交媒体上充斥着财富自由者•自由职业者推动个体化浪潮的声音。婚姻、氏族、垄断企业这些传统制度像旧容器，装不下新人类的多样性需求。
+    但“沉默的大多数”的声音是否被忽视了？东亚社会里的我观察到，依赖制度的人不在少数，且不是每个人都愿意改变、有成为数字游民的独立能力。
+    納瓦尔说现在真正有能力控制民众思想的人是各大IT龙头公司的算法工程师。这个挺有意思，控制“嘴”在多大程度上能影响“耳朵”呢？
+    <br><br>未来社会在个体化浪潮中摇摆，法国pacs同居法是个好例子：当制度为不同群体定制弹性空间，矛盾就能转化为进化动力。 
+    但除非技术确实呈指数性爆炸进步，否则真正的去中心化社会不会在我有限的生命里到来。
+    在技术上下赌注是不是就是赌算法？`,
+    parsedDate: new Date(2025, 1, 3, 11, 40),
+  },
+  {
+    id: "0",
+    content: `My life philosophy: independence, curiosity (aha moment), healthy.<br>keep those in mind and don’t be distracted.`,
+    parsedDate: new Date(2025, 1, 16, 17, 45),
+  },
+  {
+    id: "0",
+    content: `I dreamt about something wild:
+    **a mother sleeps with her own son to stay young**. Each time she gives birth to a new child, she grows younger, while the child grows up naturally. When the son reaches the right age, she makes love with him again, becoming even younger, until she’s back at the start of her life.
+    <br><br>If human life can live backward, goes from elderliness to infancy, rather than from innocence to decay, would you choose to live that way?`,
+    parsedDate: new Date(2025, 2, 20, 7, 55),
+  },
+  {
+    id: "0",
+    content: `a contemporary art by Darek Grabus. the shadows of some figures in this postcard are not straight or parallel, deliberate choice or just mistake? no clue.`,
+    images: [{ id: 0, src: "/posts/passerby.jpg", alt: "" }],
+    parsedDate: new Date(2025, 2, 21, 4, 31),
+  },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
 ];
 
 export const sortedPosts = POSTS.sort(

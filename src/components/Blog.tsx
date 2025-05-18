@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import "./Blog.css";
 import { sortedPosts as POSTS } from "../data/post";
 
-const POSTS_PER_PAGE = 7;
+const POSTS_PER_PAGE = 10;
 
 // Formatter instances for reuse
 const dateFormatter = new Intl.DateTimeFormat("en-US", {
