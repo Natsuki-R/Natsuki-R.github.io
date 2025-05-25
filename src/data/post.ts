@@ -12,6 +12,27 @@ import { Post } from "../types/post";
 const POSTS: Post[] = [
   {
     id: "0",
+    content: `Nothing serious here. You see the timestamp? I can even build my own time machine :)`,
+    parsedDate: new Date(2042, 11, 31, 0, 0),
+  },
+  {
+    id: "0",
+    header: "Poetry List",
+    content: `1. [Deaths And Entrances](https://allpoetry.com/Deaths-And-Entrances) - Dylan Thomas
+    <br>2. [El enamorado](https://www.poemas-del-alma.com/el-enamorado.htm) - Jorge Luis Borges. | [中译](https://app.bjtitle.com/new/newshow.php?newsid=5650704&src=stream&typeid=99)
+    <br>3. [Let Me Live Out My Years](https://allpoetry.com/Let-Me-Live-Out-My-Years) - John Gneisenau Neihardt
+    `,
+    parsedDate: new Date(2042, 11, 30, 0, 0),
+  },
+  {
+    id: "0",
+    header: "Arts List",
+    content: `1. [Take the Money and Run](https://kunsten.dk/en/news/kunsten-and-jens-haaning-reach-settlement-on-take-the-money-and-run-14437) - Jens Haaning
+    `,
+    parsedDate: new Date(2042, 11, 29, 0, 0),
+  },
+  {
+    id: "0",
     content: `Then she left me, but the music stayed.`,
     images: [{ id: 0, src: "/posts/music-stay.png", alt: "movie" }],
     parsedDate: new Date(2021, 2, 10, 23, 52),
@@ -177,7 +198,7 @@ const POSTS: Post[] = [
     id: "0",
     content: `I found this [tunnel](https://maps.app.goo.gl/Dmunuy3virC8RDzb8?g_st=com.google.maps.preview.copy) with huge paintings on the walls.<br>It seems like a government art project. 
     I also stood still for a while to see people’s reactions. In around 10 minutes, countless people passed by, and I’d say 90% didn’t even glance at them. It’s unbelievable how negligent people are about their surroundings.
-    Do artists observe people react—or not react—to their own works in a museum? How do they feel ? 
+    Do artists observe people react—or not react—to their own works in a museum? How do they feel? 
     Is it necessary to encourage more people to at least take a moment to appreciate art, or should we just let them be?
     `,
     parsedDate: new Date(2025, 3, 8, 12, 42),
@@ -194,11 +215,6 @@ const POSTS: Post[] = [
     <br>*Capitalism and capital* & *Religion and faith*. 
     <br> - Faith said to capital that they were best friends.<br> - Capital killed faith.<br> - Capital became the true Third Revelation(or it always is?).`,
     parsedDate: new Date(2025, 4, 18, 12, 29),
-  },
-  {
-    id: "0",
-    content: `Nothing serious here. You see the timestamp? I can even build my own time machine :)`,
-    parsedDate: new Date(2025, 11, 31, 0, 0),
   },
   {
     id: "0",
@@ -273,6 +289,186 @@ const POSTS: Post[] = [
     images: [{ id: 0, src: "/posts/passerby.jpg", alt: "" }],
     parsedDate: new Date(2025, 2, 21, 4, 31),
   },
+  {
+    id: "0",
+    content: `"a line is a dot that went for a walk" - [Paul Klee](https://www.paulklee.net/).`,
+    parsedDate: new Date(2022, 11, 9, 20, 34),
+  },
+  {
+    id: "0",
+    content: `不要乱总结。语言的懒惰是误读的开始。`,
+    parsedDate: new Date(2022, 3, 22, 2, 16),
+  },
+  {
+    id: "0",
+    content: `A smart design of questionnaire in [Kyoto](http://andromeda10.blog89.fc2.com/blog-entry-2727.html).`,
+    parsedDate: new Date(2022, 3, 1, 16, 49),
+  },
+  {
+    id: "0",
+    content: `ポスターデザイナー[黄海](https://note.com/shanghai_nikki/n/nc1c055c4576b)`,
+    parsedDate: new Date(2022, 2, 29, 19, 39),
+  },
+  {
+    id: "0",
+    content: `乔布斯在斯坦福的演讲中，有一句名言“Connecting the dots"。指的是，他在学字体设计 (calligraphy) 的时候，完全是出于无聊。但是字体设计，以及其后所代表的用户体验、设计感，却是苹果的标志性特征。可是，当时他并不是出于什么目的去学的，也就是说：
+    真正有帮助的东西，未必是有意得到的。为什么？因为未来其实是不可预测的。对于IT这种行业，更加如此。所以很难抱有目的的去说，做这个就会有用，做那个就会没用。You never know。而Anti-fragile，就是指的像乔布斯这样，通过不确定性来获益。`,
+    parsedDate: new Date(2022, 2, 28, 17, 31),
+  },
+  {
+    id: "0",
+    content: `[石花菜](https://en.wikipedia.org/wiki/Gelidiaceae)：童年和乡愁`,
+    parsedDate: new Date(2022, 2, 27, 17, 58),
+  },
+  {
+    id: "0",
+    content: `任何要靠被伤害者躲起来才能遏止的暴力都是不被惩罚的暴力，都是被怂恿的暴力。`,
+    parsedDate: new Date(2022, 2, 27, 16, 39),
+  },
+  {
+    id: "0",
+    header: "Reject conceptualism",
+    content: `Make [art](https://www.tate.org.uk/art/art-terms/c/conceptual-art) for people,
+    <br>not for documentation.
+    <br>Make art to experience
+    <br>and not to read about.`,
+    parsedDate: new Date(2022, 2, 24, 14, 25),
+  },
+  {
+    id: "0",
+    content: `[麦克卢汉](https://en.wikipedia.org/wiki/The_medium_is_the_message)认为，不是人在使用媒介，而是媒介在使用人。每一种媒介的引入都是在一种新的尺度，改变着人们感知世界的方式和理解环境的框架。并且，媒介演进并不意味着旧媒介消失，而是旧媒介成为新媒介的内容`,
+    parsedDate: new Date(2022, 2, 24, 14, 22),
+  },
+  {
+    id: "0",
+    content: `《福音书》中所说的被丢在猪面前的珍珠。[cast your pearls before swine](https://www.gotquestions.org/pearls-before-swine.html)`,
+    parsedDate: new Date(2022, 2, 22, 21, 58),
+  },
+  {
+    id: "0",
+    content: `”一句“我比你更惨”，剥夺了对方宣泄情绪的权利。更重要的是，它完全否定了对方情绪合理的地方，还将对话的关注点转移到了自己身上。“我比你更惨”低估了别人的难过，也夸大了自己的痛苦。“人类的悲欢并不相通。”如果做不到感同身受，至少不要用比惨的方式贬低别人的痛苦。”`,
+    parsedDate: new Date(2022, 2, 22, 21, 57),
+  },
+  {
+    id: "0",
+    header: "2021小结",
+    content: `1. 钱很重要，决定人生的下限。工资要能保证吃穿住行，个人而言，钱只是工作的30%目的。
+    <br>2. 目标和规划很重要，决定人生的上限。这三个月虽然很折磨(指思想上)，但收获最大的是，在寻找理想和现实的交接点、平衡点这件事上，我渐渐有了眉目。
+    <br>3. 学会忍耐，抱怨没有用，职场上没有人会心疼你的眼泪。技术上的问题可以求助外界解决，但心态上的问题，没有速成，只能自己慢慢熬。
+    <br>4. 想做的事是永远做不完的，在有限资源下找到最有价值的需求，把它做到最好。宁可把一件事尽可能地做到完美，也不要把十件事都做成半吊子。
+    <br>5. 我这辈子不一定是能赚大钱的人，但一定是会在死去的那一天感叹"不后悔来过，这辈子没白活"的人。永远热爱生活。`,
+    parsedDate: new Date(2022, 2, 22, 19, 22),
+  },
+  {
+    id: "0",
+    content: `人本：无条件爱自己，越爱自己才能越会爱别人，爱自己爱得都溢出来了，就把溢出来的爱分给别人。他人不在，自己也很开心，他人在，自己更开心。`,
+    parsedDate: new Date(2022, 2, 22, 19, 21),
+  },
+  {
+    id: "0",
+    content: `读陈春成于我就是久旱逢甘霖，终日在各种专业书工具书以及直白冗长的翻译腔书本中奔波，竟忘了用心雕琢的汉语词句是如此之美，令人沉醉，不枉毛姆所言"读小说，愉悦第一"。我们在阅读一本书，因为她毫无用处。`,
+    parsedDate: new Date(2022, 2, 22, 18, 51),
+  },
+  {
+    id: "0",
+    content: `纯粹的休息不是打游戏、看电影、看书，而是一种“无聊”的状态，是发呆，是放空`,
+    parsedDate: new Date(2022, 2, 20, 11, 41),
+  },
+  {
+    id: "0",
+    content: `I can never forget the woman who was sitting on the floor of the subway carriage, crying her heart out.`,
+    parsedDate: new Date(2022, 2, 22, 21, 29),
+  },
+  {
+    id: "0",
+    content: `波波族([Bobos](https://en.wikipedia.org/wiki/Bobo_(socio-economic_group))) is short for "Bourgeois Bohemians."`,
+    parsedDate: new Date(2022, 2, 22, 21, 32),
+  },
+  {
+    id: "0",
+    content: `[Laplace's Demon](https://en.wikipedia.org/wiki/Laplace%27s_demon) and [Poincaré recurrence theorem](https://en.wikipedia.org/wiki/Poincar%C3%A9_recurrence_theorem).`,
+    parsedDate: new Date(2025, 4, 25, 0, 0),
+  },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
+  // {
+  //   id: "0",
+  //   content: ``,
+  //   parsedDate: new Date(2025, 11, 31, 0, 0),
+  // },
   // {
   //   id: "0",
   //   content: ``,
